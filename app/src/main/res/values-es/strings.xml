@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Costa Rica Travel</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Encabezado</string>
+    <string name="action_spanish">Español</string>
+    <string name="action_english">Ingles</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_exchange_rate">Tipo de Cambio</string>
+    <string name="choose_your_language">Escoge tu idioma</string>
+    <string name="currency_dolar">%1$.2f Dolar USD</string>
+    <string name="currency_pound">%1$.2f Libra GBP</string>
+    <string name="currency_mx">%1$.2f Peso Mexicano MXN</string>
+    <string name="currency_cop">%1$.2f Peso Colombiano COP</string>
+    <string name="currency_eur">%1$.2f Euro EUR</string>
+    <string name="currency_cor">%1$.2f Cordobas NIO</string>
+    <string name="currency_pen">%1$.2f Sol Peruano PEN</string>
+    <string name="currency_br">%1$.2f Real BRL</string>
+    <string name="official_currency">La moneda oficial de Costa Rica se llama \"colon (CRC)\", aquí puedes calcular cuánto vas a pagar usando CRC como base:</string>
+    <string name="crc_amount">Cantidad en CRC</string>
+    <string name="crc_value">%1$.2f CRC</string>
+    <string name="menu_food">Comida Tradicional</string>
+    <string name="food_main_label">Costa Rica es un país con muchas culturas por lo que puedes encontrar comida de todo el mundo, pero esta es una lista de la comida más tradicional que debes comer.</string>
+    <string name="food_1">Pinto</string>
+    <string name="food_2">Olla de Carne</string>
+    <string name="food_3">Chifrijo</string>
+    <string name="food_4">Tamales</string>
+    <string name="food_1_description">descripcion</string>
+    <string name="food_2_description">descripcion</string>
+    <string name="food_3_description">descripcion</string>
+    <string name="food_4_description">descripcion</string>
+    <string name="spanish_pronunciation">Pronunciación en español</string>
+</resources>

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Costa Rica Travel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_spanish">Spanish</string>
+    <string name="action_english">English</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_exchange_rate">Exchange Rate</string>
+    <string name="menu_food">Traditional Food</string>
+    <string name="choose_your_language">Choose your Language</string>
+    <string name="currency_dolar">%1$.2f Dollar USD</string>
+    <string name="currency_pound">%1$.2f Pound GBP</string>
+    <string name="currency_mx">%1$.2f Mexican Peso MXN</string>
+    <string name="currency_cop">%1$.2f Colombian Peso COP</string>
+    <string name="currency_eur">%1$.2f Euro EUR</string>
+    <string name="currency_cor">%1$.2f Nicaraguan Cordobas NIO</string>
+    <string name="currency_pen">%1$.2f Peruvian Sol PEN</string>
+    <string name="currency_br">%1$.2f Brazilian Reais BRL</string>
+    <string name="official_currency">Costa Rica offical currency is called \"colon (CRC)\", here you can calculate how much are you going to pay using CRC as base:</string>
+    <string name="crc_amount">CRC amount</string>
+    <string name="crc_value">%1$.2f CRC</string>
+    <string name="food_main_label">Costa Rica is a country with a lot of cultures so you can find world wide food, but this is a list of the most traditional food you must eat</string>
+    <string name="food_1">Pinto</string>
+    <string name="food_2">Olla de Carne</string>
+    <string name="food_3">Chifrijo</string>
+    <string name="food_4">Tamales</string>
+    <string name="food_1_description">description 1</string>
+    <string name="food_2_description">description 2</string>
+    <string name="food_3_description">description 3</string>
+    <string name="food_4_description">description 4</string>
+    <string name="spanish_pronunciation">Spanish Pronunciation</string>
+</resources>
