@@ -23,6 +23,7 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
 
     private final Activity context;
     private final ArrayList<FoodRow> elements;
+    TextToSpeech t1;
 
     public foodAdapter(Activity context, ArrayList<FoodRow> pElements) {
         super(context, R.layout.food_item, pElements);
@@ -70,16 +71,14 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
         img.setImageResource(element.getImgId());
 
         img = view.findViewById(R.id.imgSpeakFoodModal);
-        TextToSpeech t1=new TextToSpeech(this.context, new TextToSpeech.OnInitListener() {
+        t1=new TextToSpeech(this.context, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 if(status != TextToSpeech.ERROR) {
-
+                    t1.setLanguage(new Locale("es-cr"));
                 }
             }
         });
-        t1.setLanguage(new Locale("spa"));
-        Log.d("", String.valueOf(t1.isLanguageAvailable(new Locale("spa"))));
 
         img.setOnClickListener(v -> {
             t1.speak(this.context.getString(element.getFoodNameId()),TextToSpeech.QUEUE_FLUSH,null);
