@@ -46,4 +46,5 @@
     <string name="food_8_description">Empanadas costarricenses típicas (trigo y maíz): rellenas de carne con pasas y de pollo con papas, frijoles, queso o cualqueir otro tipo de relleno es cocinada al horno o frita en aceite o grasa. Se suelen servir a la hora del café</string>
     <string name="food_9">Casado</string>
     <string name="food_9_description">El plato Casado es el número uno que encontrarás en todas las sodas (restaurantes locales) en todo el país. El plato consiste en arroz, frijoles negros, plátano, ensalada, tortilla y proteína que consiste en pollo, res, cerdo o pescado. Muchas veces a este plato se le incorpora uno o dos huevos fritos. La cocina es sencilla y deliciosa, mientras que los platos son abundantes y muy económicos.</string>
+    <string name="error_exchange_rate">Error consultando el tipo de cambio, favor intentar nuevamente en unos momentos</string>
 </resources>

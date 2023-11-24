@@ -27,8 +27,17 @@
         android:hint="@string/crc_amount"
         android:id="@+id/CurrencyAmount"/>
 
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_below="@+id/CurrencyAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100" />
+
     <ListView
         android:id="@+id/listCurrency"
+        android:visibility="gone"
         android:layout_below="@+id/CurrencyAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

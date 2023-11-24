@@ -34,9 +34,9 @@ public class HttpRequest {
             }
             return "";
         } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
+            return "";
         }catch (IOException e) {
-            throw new RuntimeException(e);
+            return "";
         }
     }
 }
