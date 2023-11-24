@@ -3,14 +3,14 @@
     <string name="app_name">Costa Rica Travel</string>
     <string name="navigation_drawer_open">Abrir Menu</string>
     <string name="navigation_drawer_close">Cerrar Menu</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Costa Rica Travel</string>
+    <string name="nav_header_subtitle">Descubriendo el Pura vida</string>
     <string name="nav_header_desc">Encabezado</string>
     <string name="action_spanish">Español</string>
     <string name="action_english">Ingles</string>
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_gallery">Galeria</string>
+    <string name="menu_places">Lugares destacados</string>
     <string name="menu_exchange_rate">Tipo de Cambio</string>
     <string name="choose_your_language">Escoge tu idioma</string>
     <string name="currency_dolar">%1$.2f Dolar USD</string>
@@ -30,9 +30,20 @@
     <string name="food_2">Olla de Carne</string>
     <string name="food_3">Chifrijo</string>
     <string name="food_4">Tamales</string>
-    <string name="food_1_description">descripcion</string>
-    <string name="food_2_description">descripcion</string>
-    <string name="food_3_description">descripcion</string>
-    <string name="food_4_description">descripcion</string>
+    <string name="food_1_description">El pinto es el plato más tradicional para el desayuno (pero también lo puedes comer en el almuerzo o en la cena). Está hecho de arroz y frijoles mezclados, lo puedes encontrar en todo el país.</string>
+    <string name="food_2_description">La olla de carne es una sopa tradicional hecha con carne de res y muchas verduras, que generalmente se encuentra en todo el país.</string>
+    <string name="food_3_description">El chifrijo es un plato tradicional a base de arroz, frijoles, pico de gallo (tomate picado mezclado con especies) y cerdo, servido ocasionalmente con aguacate y tortillas fritas</string>
+    <string name="food_4_description">Los tamales han sido durante mucho tiempo una tradición costarricense en torno a las vacaciones de Navidad. Se componen de masa de maíz, carne, arroz y verduras.  Luego, este combo se envuelve en una hoja de plátano y se cuece al vapor. A medida que la mezcla se cocina lentamente, el sabor terroso de la hoja se filtra en la masa. Los tamales de cerdo son los más comunes, pero también los encontrarás de pollo y frijoles.</string>
     <string name="spanish_pronunciation">Pronunciación en español</string>
+    <string name="places_under_construction">Página en construcción</string>
+    <string name="food_5">Arroz con leche</string>
+    <string name="food_5_description">El arroz con leche es un postre típico hecho cocinando lentamente arroz con leche y azúcar. Se sirve frío o caliente y se le suele espolvorear canela, vainilla o cáscara de limón por encima para aromatizarlo</string>
+    <string name="food_6">Picadillo de Chayote</string>
+    <string name="food_6_description">Un delicioso picadillo de chayote es uno de los platos predilectos que los costarricenses quieren tener en su mesa. Generalmente lo degustan durante un almuerzo o cena. Solo o acompañado es delicioso</string>
+    <string name="food_7">Chorreadas</string>
+    <string name="food_7_description">Chorreadas son panqueques tradicionales de Costa Rica que se preparan con maíz fresco y generalmente, se sirven para desayunar, aunque también se pueden disfrutar en el almuerzo o como aperitivo. Estos panqueques suelen ser dulces, pero también tienen su versión salada</string>
+    <string name="food_8">Empanadas</string>
+    <string name="food_8_description">Empanadas costarricenses típicas (trigo y maíz): rellenas de carne con pasas y de pollo con papas, frijoles, queso o cualqueir otro tipo de relleno es cocinada al horno o frita en aceite o grasa. Se suelen servir a la hora del café</string>
+    <string name="food_9">Casado</string>
+    <string name="food_9_description">El plato Casado es el número uno que encontrarás en todas las sodas (restaurantes locales) en todo el país. El plato consiste en arroz, frijoles negros, plátano, ensalada, tortilla y proteína que consiste en pollo, res, cerdo o pescado. Muchas veces a este plato se le incorpora uno o dos huevos fritos. La cocina es sencilla y deliciosa, mientras que los platos son abundantes y muy económicos.</string>
 </resources>

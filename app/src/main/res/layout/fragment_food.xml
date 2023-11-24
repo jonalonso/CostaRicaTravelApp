@@ -12,7 +12,9 @@
         android:id="@+id/TextFood"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
         android:text="@string/food_main_label"/>
 
     <ListView
@@ -20,6 +22,7 @@
         android:layout_below="@+id/TextFood"
         android:layout_width="match_parent"
         android:listSelector="@android:color/transparent"
+        android:paddingBottom="60dp"
         android:layout_height="wrap_content"/>
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"

@@ -50,4 +50,12 @@ public class FoodFragment extends Fragment {
         AdsController.displayBanner(binding.adView);
         return root;
     }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if(adapter!=null){
+            adapter.onClose();
+        }
+    }
 }

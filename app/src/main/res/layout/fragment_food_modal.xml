@@ -13,8 +13,8 @@
         android:layout_alignParentEnd="true"
         android:src="@drawable/ic_close" />
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="228dp"
+        android:layout_height="150dp"
         android:layout_below="@id/imgCloseFoodModal"
         android:scaleType="centerInside"
         android:adjustViewBounds="true"
@@ -25,11 +25,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imgFoodModal"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/LinearFoodModal">
         <TextView
             android:id="@+id/test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:layout_gravity="center_vertical"
             />
         <ImageView
@@ -41,6 +43,16 @@
             android:src="@drawable/ic_speak" />
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:layout_centerHorizontal="true"
+        android:justificationMode="inter_word"
+        android:layout_below="@id/LinearFoodModal"
+        />
 
 
 </RelativeLayout>

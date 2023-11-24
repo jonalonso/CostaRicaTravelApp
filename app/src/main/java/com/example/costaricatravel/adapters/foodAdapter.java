@@ -31,6 +31,11 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
 
         this.context=context;
         this.elements=pElements;
+        t1=new TextToSpeech(this.context, status -> {
+            if(status != TextToSpeech.ERROR) {
+                t1.setLanguage(new Locale("es-cr"));
+            }
+        });
 
     }
 
@@ -43,18 +48,22 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
         TextView Text2 = rowView.findViewById(R.id.textElement2);
         ImageView imageView2 = rowView.findViewById(R.id.imgElement2);
 
+        if(element.firstElement !=null){
+            Text.setText(element.firstElement.getFoodNameId());
+            imageView.setImageResource(element.firstElement.getImgId());
+            imageView.setOnClickListener(v -> {
+                toogleModal(element.firstElement);
+            });
+        }
 
-        Text.setText(element.firstElement.getFoodNameId());
-        imageView.setImageResource(element.firstElement.getImgId());
-        imageView.setOnClickListener(v -> {
-            toogleModal(element.firstElement);
-        });
+        if(element.secondElement != null){
+            Text2.setText(element.secondElement.getFoodNameId());
+            imageView2.setImageResource(element.secondElement.getImgId());
+            imageView2.setOnClickListener(v -> {
+                toogleModal(element.secondElement);
+            });
+        }
 
-        Text2.setText(element.secondElement.getFoodNameId());
-        imageView2.setImageResource(element.secondElement.getImgId());
-        imageView2.setOnClickListener(v -> {
-            toogleModal(element.secondElement);
-        });
 
         return rowView;
     };
@@ -63,6 +72,8 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
         BottomSheetDialog dialog = new BottomSheetDialog(this.context);
         TextView txt = view.findViewById(R.id.test);
         txt.setText(element.getFoodNameId());
+        txt = view.findViewById(R.id.foodDescription);
+        txt.setText(element.getDescriptionId());
         ImageView img = view.findViewById(R.id.imgCloseFoodModal);
         img.setOnClickListener(v -> {
             dialog.dismiss();
@@ -71,22 +82,21 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
         img.setImageResource(element.getImgId());
 
         img = view.findViewById(R.id.imgSpeakFoodModal);
-        t1=new TextToSpeech(this.context, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if(status != TextToSpeech.ERROR) {
-                    t1.setLanguage(new Locale("es-cr"));
-                }
-            }
-        });
 
         img.setOnClickListener(v -> {
-            t1.speak(this.context.getString(element.getFoodNameId()),TextToSpeech.QUEUE_FLUSH,null);
+            t1.speak(element.getSpanish(),TextToSpeech.QUEUE_FLUSH,null,null);
         });
 
 
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
+    }
+
+    public void onClose(){
+        if(t1!=null){
+            t1.stop();
+            t1.shutdown();
+        }
     }
 }

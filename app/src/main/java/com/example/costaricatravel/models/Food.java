@@ -5,10 +5,13 @@ public class Food {
     private Integer imgId;
     private Integer descriptionId;
 
-    public Food(Integer foodNameId, Integer imgId, Integer descriptionId) {
+    private String spanish;
+
+    public Food(Integer foodNameId, Integer imgId, Integer descriptionId, String spanish) {
         this.foodNameId = foodNameId;
         this.imgId = imgId;
         this.descriptionId = descriptionId;
+        this.spanish = spanish;
     }
 
     public Integer getFoodNameId() {
@@ -33,5 +36,13 @@ public class Food {
 
     public void setDescriptionId(Integer descriptionId) {
         this.descriptionId = descriptionId;
+    }
+
+    public String getSpanish() {
+        return spanish;
+    }
+
+    public void setSpanish(String spanish) {
+        this.spanish = spanish;
     }
 }

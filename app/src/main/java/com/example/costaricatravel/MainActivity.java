@@ -1,14 +1,10 @@
 package com.example.costaricatravel;
 
-import android.app.Activity;
-import android.content.res.Configuration;
-import android.content.res.Resources;
+
 import android.os.Bundle;
 
-import com.example.costaricatravel.utils.Language;
+import com.example.costaricatravel.utils.TextViewPainter;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -20,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.costaricatravel.databinding.ActivityMainBinding;
 
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,12 +36,15 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery,R.id.nav_food, R.id.nav_settings)
+                R.id.nav_home, R.id.nav_places,R.id.nav_food, R.id.nav_settings)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        TextViewPainter.addColor(navigationView.getHeaderView(0).findViewById(R.id.drawerTitle),this.getString(R.string.nav_header_title));
+            TextViewPainter.addColor(navigationView.getHeaderView(0).findViewById(R.id.drawerSubTitle),this.getString(R.string.nav_header_subtitle));
 
         MobileAds.initialize(this, initializationStatus -> {
         });

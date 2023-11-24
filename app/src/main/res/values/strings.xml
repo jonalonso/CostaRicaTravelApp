@@ -2,14 +2,14 @@
     <string name="app_name">Costa Rica Travel</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Costa Rica Travel</string>
+    <string name="nav_header_subtitle">Discovering the \"Pura Vida\"</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_spanish">Spanish</string>
     <string name="action_english">English</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_places">Highlights places</string>
     <string name="menu_exchange_rate">Exchange Rate</string>
     <string name="menu_food">Traditional Food</string>
     <string name="choose_your_language">Choose your Language</string>
@@ -26,12 +26,23 @@
     <string name="crc_value">%1$.2f CRC</string>
     <string name="food_main_label">Costa Rica is a country with a lot of cultures so you can find world wide food, but this is a list of the most traditional food you must eat</string>
     <string name="food_1">Pinto</string>
-    <string name="food_2">Olla de Carne</string>
+    <string name="food_2">Meat Pot</string>
     <string name="food_3">Chifrijo</string>
     <string name="food_4">Tamales</string>
-    <string name="food_1_description">description 1</string>
-    <string name="food_2_description">description 2</string>
-    <string name="food_3_description">description 3</string>
-    <string name="food_4_description">description 4</string>
+    <string name="food_1_description">Pinto is the most traditional dish for breakfast (but you can eat it for lunch or dinner as well) It is made of rice and beans mixed up, you can find this all over the country</string>
+    <string name="food_2_description">Meat pot is the a traditional soup made with beef and many vegetables, usually found all over the country</string>
+    <string name="food_3_description">Chifrijo is a traditional dish made of rice, beans, \"Pico de gallo\" (tomato chopped mixed with species) and pork, ocaccionaly served with avocado and chips</string>
+    <string name="food_4_description">A tamale is a corn-based cooked masa that is steamed in either banana leaves. Inside of the masa are fillings that  generally include rice, meat, and vegetables.</string>
     <string name="spanish_pronunciation">Spanish Pronunciation</string>
+    <string name="places_under_construction">Page under construction</string>
+    <string name="food_5">Rice Pudding</string>
+    <string name="food_5_description">Rice pudding is a typical dessert made by slowly cooking rice with milk and sugar. It is served hot or cold and cinnamon, vanilla or lemon peel is usually sprinkled on top to flavor it.</string>
+    <string name="food_6">Picadillo de Chayote</string>
+    <string name="food_6_description">Picadillo de chayote is a very traditional Costa Rican recipe that combines the chayote fruit with traditional Costa Rican sofrito, spices, and cream. It is often served as a side dish to the Costa Rican casado, which is a main meal</string>
+    <string name="food_7">Chorreadas</string>
+    <string name="food_7_description">Chorreadas are basically Costa Rican corn pancakes. They can be sweet or savory, and are made from ground fresh corn. They have similar ingredients to a corn tortilla but the fresh corn and milk give them a completely different texture.</string>
+    <string name="food_8">Empanadas</string>
+    <string name="food_8_description">Empanadas are a very popular food in Costa Rica, both because they are easy to make at home, but also because you can buy empanadas on the street in practically every location imaginable.  Bean and cheese empanadas (empanada de frijol con queso) are a popular vegetarian type of empanada. Most other empanadas just have a single filling, but the bean and cheese are a fun take on the traditional filling.</string>
+    <string name="food_9">Casado</string>
+    <string name="food_9_description">The casado is the most traditional Costa Rican lunch- made up of rice, (black) beans, protein, vegetables- all on one plate.  Since lunch is the main meal of the day in Costa Rica, the casado is the highlight of Costa Rican cuisine.</string>
 </resources>

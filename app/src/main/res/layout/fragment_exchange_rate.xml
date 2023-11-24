@@ -11,6 +11,8 @@
     <TextView
         android:id="@+id/TextCurrency"
         android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:justificationMode="inter_word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/official_currency"/>
@@ -29,7 +31,9 @@
         android:id="@+id/listCurrency"
         android:layout_below="@+id/CurrencyAmount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="60dp"/>
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
