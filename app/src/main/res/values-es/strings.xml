@@ -47,4 +47,16 @@
     <string name="food_9">Casado</string>
     <string name="food_9_description">El plato Casado es el número uno que encontrarás en todas las sodas (restaurantes locales) en todo el país. El plato consiste en arroz, frijoles negros, plátano, ensalada, tortilla y proteína que consiste en pollo, res, cerdo o pescado. Muchas veces a este plato se le incorpora uno o dos huevos fritos. La cocina es sencilla y deliciosa, mientras que los platos son abundantes y muy económicos.</string>
     <string name="error_exchange_rate">Error consultando el tipo de cambio, favor intentar nuevamente en unos momentos</string>
+    <string name="food_10">Vigoron</string>
+    <string name="food_10_description">Plato tipico costarricense de la costa pacífica. Buen chicharron de cerdo acompañado de ensalada de repollo con buen limón, chimichurri de tomate y yuca sanchochada muy suavecita</string>
+    <string name="food_11">Rice and beans</string>
+    <string name="food_11_description">El típico y tradicional rice and beans, es un plato muy popular que se elabora a base de arroz y frijoles cocidos en leche de coco. Generalmente se complementa con un delicioso pollo en salsa, lo cual le da el toque especial (si, se le conoce por su nombre en ingles)</string>
+    <string name="food_12">Arroz con pollo</string>
+    <string name="food_12_description">Es usual encontrar en las reuniones de familiares de los ticos un plato de arroz con pollo, acompañado de papas tostadas y frijoles molidos, algunas veces con ensalada de caracolitos, ensalada rusa o ensalada verde.</string>
+    <string name="food_13">Agua dulce</string>
+    <string name="food_13_description">El Agua Dulce se prepara con agua o leche y la tapa de dulce, un producto que por años se ha elaborado en trapiches donde intervienen pequeñas industrias familiares, es una bebida muy gustada por los niños y los adultos</string>
+    <string name="food_14">Ceviche</string>
+    <string name="food_14_description">El ceviche a la tica es un platillo de predilección entre los comensales costarricenses, a base de un delicioso pescado y otros elementos que lo hacen una maravillosa entrada.</string>
+    <string name="food_15">Churchil</string>
+    <string name="food_15_description">El churchill en si es un granizado que tiene los ingredientes básicos (hielo escarchado, sirope y leche condensada) con la variante de que se le agregan ingredientes como helado, leche en polvo, frutas picadas</string>
 </resources>

@@ -46,4 +46,16 @@
     <string name="food_9">Casado</string>
     <string name="food_9_description">The casado is the most traditional Costa Rican lunch- made up of rice, (black) beans, protein, vegetables- all on one plate.  Since lunch is the main meal of the day in Costa Rica, the casado is the highlight of Costa Rican cuisine.</string>
     <string name="error_exchange_rate">Error getting exchange rates values, please try again later</string>
+    <string name="food_10">Vigoron</string>
+    <string name="food_10_description">The Costa Rican vigorón is made from chicharrones (fried pork rinds or pork belly), a cabbage and chimichurri salad and with boiled yuca (cassava) and boiled green plantains in the mix, this dish is usually served cold.</string>
+    <string name="food_11">Rice and Beans</string>
+    <string name="food_11_description">rice and beans is a completely different recipe, as it combines red beans with rice cooked in coconut milk, and spiced with a bit of habanero pepper. The dish is said in English. Over time boiled chicken thighs were added as a side dish, and the result is beyond delicious.</string>
+    <string name="food_12">Rice with Chicken</string>
+    <string name="food_12_description">Rice with Chicken is one of the most popular and traditional Costa Rican dishes, It is the official dish in any social event for example at birthday parties. Maybe because it is so simple to make and you can make it in advance so it is conveniently ready when your guest arrive.</string>
+    <string name="food_13">Sweet water</string>
+    <string name="food_13_description">This hot drink combines tapa de dulce (Costa Rican brown sugar) and boiling water/milk for a delightful treat.</string>
+    <string name="food_14">Ceviche</string>
+    <string name="food_14_description">This Costa Rican ceviche recipe combines fresh white fish marinated in lime, red bell pepper, cilantro, and onion. It’s a favorite worldwide- and the Costa Rican version is to die for.</string>
+    <string name="food_15">Churchil</string>
+    <string name="food_15_description">Churchill is a dessert made up of ice, syrup, condensed milk, powder milk, ice cream and fruits,</string>
 </resources>

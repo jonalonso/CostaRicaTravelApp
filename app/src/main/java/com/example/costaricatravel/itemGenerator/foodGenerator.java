@@ -27,7 +27,19 @@ public class foodGenerator {
         response.add(new FoodRow(firstElement,secondElement));
 
         firstElement = new Food(R.string.food_9,R.drawable.food_9_img,R.string.food_9_description,"Casado");
-        //secondElement = new Food(R.string.food_8,R.drawable.food_8_img,R.string.food_8_description,"Empanadas");
+        secondElement = new Food(R.string.food_10,R.drawable.food_10_img,R.string.food_10_description,"Vigoron");
+        response.add(new FoodRow(firstElement,secondElement));
+
+        firstElement = new Food(R.string.food_11,R.drawable.food_11_img,R.string.food_11_description,"Rice and beans");
+        secondElement = new Food(R.string.food_12,R.drawable.food_12_img,R.string.food_12_description,"Arroz con pollo");
+        response.add(new FoodRow(firstElement,secondElement));
+
+        firstElement = new Food(R.string.food_13,R.drawable.food_13_img,R.string.food_13_description,"Agua dulce");
+        secondElement = new Food(R.string.food_14,R.drawable.food_14_img,R.string.food_14_description,"Ceviche");
+        response.add(new FoodRow(firstElement,secondElement));
+
+        firstElement = new Food(R.string.food_15,R.drawable.food_15_img,R.string.food_15_description,"Churchil");
+        //secondElement = new Food(R.string.food_14,R.drawable.food_14_img,R.string.food_14_description,"Ceviche");
         response.add(new FoodRow(firstElement,null));
 
         return response;
