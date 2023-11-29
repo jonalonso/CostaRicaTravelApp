@@ -38,7 +38,7 @@ public class foodGenerator {
         secondElement = new Food(R.string.food_14,R.drawable.food_14_img,R.string.food_14_description,"Ceviche");
         response.add(new FoodRow(firstElement,secondElement));
 
-        firstElement = new Food(R.string.food_15,R.drawable.food_15_img,R.string.food_15_description,"Churchil");
+        firstElement = new Food(R.string.food_15,R.drawable.food_15_img,R.string.food_15_description,"Chúrchil");
         //secondElement = new Food(R.string.food_14,R.drawable.food_14_img,R.string.food_14_description,"Ceviche");
         response.add(new FoodRow(firstElement,null));
 

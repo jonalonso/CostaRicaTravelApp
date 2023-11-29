@@ -7,6 +7,7 @@ import com.example.costaricatravel.utils.TextViewPainter;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
@@ -43,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        TextViewPainter.addColor(navigationView.getHeaderView(0).findViewById(R.id.drawerTitle),this.getString(R.string.nav_header_title));
-            TextViewPainter.addColor(navigationView.getHeaderView(0).findViewById(R.id.drawerSubTitle),this.getString(R.string.nav_header_subtitle));
 
         MobileAds.initialize(this, initializationStatus -> {
         });
