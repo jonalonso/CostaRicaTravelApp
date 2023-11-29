@@ -5,10 +5,6 @@
     <color name="purple_600">#408A10</color>
     <color name="purple_700">#408A10</color>
 
-    <color name="navBarCenter">#B9FAB6</color>
-    <color name="navBarEnd">#FFFFFF</color>
-    <color name="navBarStart">#FFFFFF</color>
-
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>

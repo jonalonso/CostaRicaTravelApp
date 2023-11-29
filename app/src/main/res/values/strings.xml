@@ -1,18 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Costa Rica Travel</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Costa Rica Travel</string>
     <string name="nav_header_subtitle">Discovering the \"Pura Vida\"</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_spanish">Spanish</string>
-    <string name="action_english">English</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_places">Highlights places</string>
     <string name="menu_exchange_rate">Exchange Rate</string>
     <string name="menu_food">Traditional Food</string>
-    <string name="choose_your_language">Choose your Language</string>
     <string name="currency_dolar">%1$.2f Dollar USD</string>
     <string name="currency_pound">%1$.2f Pound GBP</string>
     <string name="currency_mx">%1$.2f Mexican Peso MXN</string>
@@ -58,4 +53,12 @@
     <string name="food_14_description">This Costa Rican ceviche recipe combines fresh white fish marinated in lime, red bell pepper, cilantro, and onion. It’s a favorite worldwide- and the Costa Rican version is to die for.</string>
     <string name="food_15">Churchil</string>
     <string name="food_15_description">Churchill is a dessert made up of ice, syrup, condensed milk, powder milk, ice cream and fruits,</string>
+    <string name="home_1">TimeZone</string>
+    <string name="home_1_description">UTC-6 (CST)</string>
+    <string name="home_2">Electrical Plugs</string>
+    <string name="home_2_description">110V Type A &amp; B Sockets</string>
+    <string name="home_3">Currency</string>
+    <string name="home_3_description">Colon</string>
+    <string name="home_4">Main Language</string>
+    <string name="home_4_description">" Spanish"</string>
 </resources>

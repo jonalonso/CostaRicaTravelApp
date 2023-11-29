@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Costa Rica Travel</string>
-    <string name="navigation_drawer_open">Abrir Menu</string>
-    <string name="navigation_drawer_close">Cerrar Menu</string>
     <string name="nav_header_title">Costa Rica Travel</string>
     <string name="nav_header_subtitle">Descubriendo el Pura vida</string>
     <string name="nav_header_desc">Encabezado</string>
-    <string name="action_spanish">Español</string>
-    <string name="action_english">Ingles</string>
 
     <string name="menu_home">Inicio</string>
     <string name="menu_places">Lugares destacados</string>
     <string name="menu_exchange_rate">Tipo de Cambio</string>
-    <string name="choose_your_language">Escoge tu idioma</string>
     <string name="currency_dolar">%1$.2f Dolar USD</string>
     <string name="currency_pound">%1$.2f Libra GBP</string>
     <string name="currency_mx">%1$.2f Peso Mexicano MXN</string>
@@ -59,4 +54,12 @@
     <string name="food_14_description">El ceviche a la tica es un platillo de predilección entre los comensales costarricenses, a base de un delicioso pescado y otros elementos que lo hacen una maravillosa entrada.</string>
     <string name="food_15">Churchil</string>
     <string name="food_15_description">El churchill en si es un granizado que tiene los ingredientes básicos (hielo escarchado, sirope y leche condensada) con la variante de que se le agregan ingredientes como helado, leche en polvo, frutas picadas</string>
+    <string name="home_1">Zona Horaria</string>
+    <string name="home_1_description">UTC-6 (CST)</string>
+    <string name="home_2">Tomacorrientes</string>
+    <string name="home_2_description">110V Tomas tipo A &amp; B</string>
+    <string name="home_3">" Moneda"</string>
+    <string name="home_3_description">" Colón"</string>
+    <string name="home_4">" Idioma"</string>
+    <string name="home_4_description">" Español"</string>
 </resources>
