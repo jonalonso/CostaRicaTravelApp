@@ -47,17 +47,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
+
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_1"/>
                 <TextView
+                    android:id="@+id/textTimeZone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_1_description"
-                    android:drawableEnd="@drawable/ic_help"/>
+                    android:drawableEnd="@drawable/ic_help"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -77,14 +80,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_2"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_2_description"/>
             </LinearLayout>
@@ -106,14 +109,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_3"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_3_description"
                     android:drawableEnd="@drawable/ic_help"/>
@@ -136,14 +139,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_4"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_4_description"
                     android:drawableEnd="@drawable/ic_help"/>

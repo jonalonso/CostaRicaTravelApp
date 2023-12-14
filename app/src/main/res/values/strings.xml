@@ -61,4 +61,5 @@
     <string name="home_3_description">Colon</string>
     <string name="home_4">Main Language</string>
     <string name="home_4_description">" Spanish"</string>
+    <string name="time_actual">Actual Time</string>
 </resources>

@@ -3,8 +3,8 @@
     <style name="Theme.CostaRicaTravel" parent="Theme.MaterialComponents.DayNight.Bridge">
         <!-- Primary brand color. -->
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/nav_bar</item>
+        <item name="colorPrimaryVariant">@color/notification_bar</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

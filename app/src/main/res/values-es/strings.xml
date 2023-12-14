@@ -62,4 +62,5 @@
     <string name="home_3_description">" Colón"</string>
     <string name="home_4">" Idioma"</string>
     <string name="home_4_description">" Español"</string>
+    <string name="time_actual">Hora Actual</string>
 </resources>
