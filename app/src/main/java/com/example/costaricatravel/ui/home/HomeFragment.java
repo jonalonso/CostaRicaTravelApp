@@ -40,16 +40,16 @@ public class HomeFragment extends Fragment {
 
         ArrayList tmpImgList = new ArrayList<SlideModel>();
 
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701354737/fqyqh5bjqjc0gdevtyi1.jpg", "Bahía ballena", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701353550/rwvf6mqko5xlcw2cfdqd.jpg", "Volcan Arenal", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701354542/orwke15erlwgpoimhlon.jpg", "Rio Celeste", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701353550/vhhc1pgghfp73xjoxmak.jpg", "La Fortuna", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701355663/mmmg11gwnipsovlpy6rk.jpg", "Isla del coco", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701355943/tfkbwj5roe6jeaywolht.jpg", "Ruinas de Cartago", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701356330/i7auuzyujr8yemgiqqoh.jpg", "Parque La Sabana", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393051/rz0rzog0zwoqs0rxbntw.jpg", "Museo de los niños", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393288/wjvsh6t3afnbthdplaeq.jpg", "Parque Zarcero", ScaleTypes.FIT));
-        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", "Sanatorio Duran", ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701354737/fqyqh5bjqjc0gdevtyi1.jpg", getString(R.string.home_slider_1), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701353550/rwvf6mqko5xlcw2cfdqd.jpg", getString(R.string.home_slider_2), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701354542/orwke15erlwgpoimhlon.jpg", getString(R.string.home_slider_3), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701353550/vhhc1pgghfp73xjoxmak.jpg", getString(R.string.home_slider_4), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701355663/mmmg11gwnipsovlpy6rk.jpg", getString(R.string.home_slider_5), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701355943/tfkbwj5roe6jeaywolht.jpg", getString(R.string.home_slider_6), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701356330/i7auuzyujr8yemgiqqoh.jpg", getString(R.string.home_slider_7), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393051/rz0rzog0zwoqs0rxbntw.jpg", getString(R.string.home_slider_8), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393288/wjvsh6t3afnbthdplaeq.jpg", getString(R.string.home_slider_9), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", getString(R.string.home_slider_10), ScaleTypes.FIT));
 
 
         //

@@ -63,4 +63,14 @@
     <string name="home_4">" Idioma"</string>
     <string name="home_4_description">" Español"</string>
     <string name="time_actual">Hora Actual</string>
+    <string name="home_slider_1">Bahía Ballena</string>
+    <string name="home_slider_2">Volcán Arenal</string>
+    <string name="home_slider_3">Río Celeste</string>
+    <string name="home_slider_4">Fortuna</string>
+    <string name="home_slider_5">Isla del coco</string>
+    <string name="home_slider_6">Ruinas de Cartago</string>
+    <string name="home_slider_7">Parque La Sabana</string>
+    <string name="home_slider_8">Museo de los niños</string>
+    <string name="home_slider_9">Parque Zarcero</string>
+    <string name="home_slider_10">Sanatorio Duran</string>
 </resources>

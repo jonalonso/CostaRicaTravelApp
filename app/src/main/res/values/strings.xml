@@ -62,4 +62,14 @@
     <string name="home_4">Main Language</string>
     <string name="home_4_description">" Spanish"</string>
     <string name="time_actual">Actual Time</string>
+    <string name="home_slider_1">Whale Bay</string>
+    <string name="home_slider_2">Arenal Volcano</string>
+    <string name="home_slider_3">Celeste River</string>
+    <string name="home_slider_4">Fortuna</string>
+    <string name="home_slider_5">Cocos Island</string>
+    <string name="home_slider_6">Ruins of Cartago</string>
+    <string name="home_slider_7">Sabana Park</string>
+    <string name="home_slider_8">Children Museum</string>
+    <string name="home_slider_9">Zarcero Park</string>
+    <string name="home_slider_10">Duran Sanatorium</string>
 </resources>
