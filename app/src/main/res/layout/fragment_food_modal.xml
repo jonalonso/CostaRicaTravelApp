@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.food.FoodModalFragment">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imgCloseFoodModal"
@@ -31,6 +30,7 @@
             android:id="@+id/test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/nav_bar"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:layout_gravity="center_vertical"
             />
@@ -47,7 +47,8 @@
         android:id="@+id/foodDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20px"
+        android:padding="20dp"
+        android:textColor="@color/nav_bar"
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_centerHorizontal="true"
         android:justificationMode="inter_word"

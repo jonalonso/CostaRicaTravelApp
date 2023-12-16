@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Costa Rica Travel</string>
     <string name="nav_header_title">Costa Rica Travel</string>
     <string name="nav_header_subtitle">Discovering the \"Pura Vida\"</string>
@@ -16,7 +16,7 @@
     <string name="currency_cor">%1$.2f Nicaraguan Cordobas NIO</string>
     <string name="currency_pen">%1$.2f Peruvian Sol PEN</string>
     <string name="currency_br">%1$.2f Brazilian Reais BRL</string>
-    <string name="official_currency">Costa Rica offical currency is called \"colon (CRC)\", here you can calculate how much are you going to pay using CRC as base:</string>
+    <string name="official_currency">Costa Rica official currency is called \"colon (CRC)\", here you can calculate how much are you going to pay using CRC as base:</string>
     <string name="crc_amount">CRC amount</string>
     <string name="crc_value">%1$.2f CRC</string>
     <string name="food_main_label">Costa Rica is a country with a lot of cultures so you can find world wide food, but this is a list of the most traditional food you must eat</string>
@@ -72,4 +72,7 @@
     <string name="home_slider_8">Children Museum</string>
     <string name="home_slider_9">Zarcero Park</string>
     <string name="home_slider_10">Duran Sanatorium</string>
+    <string name="home_currency_disclaimer">Must of the places in Costa Rica takes Credit Cards (specially Visa or MasterCard), cash could be used on public transportations, souvenirs or buying street food. Some places might accept dollars cash on a lower exchange rate, so avoid overpay and try to get colons at the airport</string>
+    <string name="number_validation">Number too long, please use a lower value</string>
+    <string name="country_flag">Country Flag</string>
 </resources>

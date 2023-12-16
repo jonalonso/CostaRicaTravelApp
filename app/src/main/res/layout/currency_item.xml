@@ -6,6 +6,7 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="60dp"
+        android:contentDescription="@string/country_flag"
         android:layout_height="60dp"
         android:padding="5dp" />
 
@@ -20,15 +21,15 @@
             android:text="Medium Text"
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:padding="2dp"
-            android:textColor="#4d4d4d" />
+            android:textColor="@color/nav_bar" />
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:layout_marginLeft="10dp"/>
+            android:textColor="@color/nav_bar"
+            android:layout_marginStart="10dp"/>
     </LinearLayout>
 </LinearLayout>

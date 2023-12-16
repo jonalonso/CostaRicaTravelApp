@@ -31,12 +31,12 @@ import java.util.ArrayList;
 public class ExchangeRateFragment extends Fragment {
     private FragmentExchangeRateBinding binding;
     private currencyAdapter adapter = null;
-    private String BCCR_API = "https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx/ObtenerIndicadoresEconomicos";
+    private final String BCCR_API = "https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx/ObtenerIndicadoresEconomicos";
 
-    private ArrayList<Currency> currencyArray = new ArrayList<>();
+    private final ArrayList<Currency> currencyArray = new ArrayList<>();
 
-    private int TOTAL_CURRENCIES = 8;
-    private int MAX_PROGRESS = 100;
+    private final int TOTAL_CURRENCIES = 8;
+    private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -72,9 +72,15 @@ public class ExchangeRateFragment extends Fragment {
                             cur.setCustomValue(cur.getOriginalValue());
                         }
                     }else{
-                        for(Currency cur: currencyArray){
-                            cur.setCustomValue(Integer.valueOf(s.toString()));
+                        try{
+                            int textValue = Integer.valueOf(s.toString());
+                            for(Currency cur: currencyArray){
+                                cur.setCustomValue(textValue);
+                            }
+                        }catch (Exception e){
+                            Toast.makeText(getContext(),getString(R.string.number_validation),Toast.LENGTH_SHORT).show();
                         }
+
                     }
                     ((BaseAdapter) list.getAdapter()).notifyDataSetChanged();
                 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.home.HomeFragment">
 
 
@@ -14,6 +15,7 @@
         app:iss_auto_cycle="true"
         app:iss_period="2500"
         app:iss_delay="2500"
+        android:background="@android:color/transparent"
         app:iss_error_image="@drawable/ic_errorimg"
         app:iss_placeholder="@drawable/ic_loading"
         app:iss_selected_dot="@drawable/ic_circle_selected"
@@ -48,7 +50,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_1"/>
                 <TextView
@@ -119,6 +120,7 @@
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_3_description"
+                    android:id="@+id/textCurrency"
                     android:drawableEnd="@drawable/ic_help"/>
             </LinearLayout>
 

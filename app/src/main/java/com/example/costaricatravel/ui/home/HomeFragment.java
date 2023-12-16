@@ -1,12 +1,10 @@
 package com.example.costaricatravel.ui.home;
 
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,20 +15,20 @@ import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.costaricatravel.R;
 import com.example.costaricatravel.databinding.FragmentHomeBinding;
-import com.example.costaricatravel.models.Food;
 import com.example.costaricatravel.utils.AdsController;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Objects;
 import java.util.TimeZone;
 
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
-    private int MAX_SLIDER_ELEMENTS = 5;
+    private final int MAX_SLIDER_ELEMENTS = 5;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,7 +36,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        ArrayList tmpImgList = new ArrayList<SlideModel>();
+        ArrayList<SlideModel> tmpImgList = new ArrayList<>();
 
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701354737/fqyqh5bjqjc0gdevtyi1.jpg", getString(R.string.home_slider_1), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1701353550/rwvf6mqko5xlcw2cfdqd.jpg", getString(R.string.home_slider_2), ScaleTypes.FIT));
@@ -57,7 +55,7 @@ public class HomeFragment extends Fragment {
         Collections.shuffle(tmpImgList);
 
 
-        ArrayList finalList = new ArrayList<SlideModel>() ;
+        ArrayList<SlideModel> finalList = new ArrayList<>() ;
         for(int i=0;i<MAX_SLIDER_ELEMENTS;i++){
             finalList.add(tmpImgList.get(i));
         }
@@ -69,12 +67,26 @@ public class HomeFragment extends Fragment {
         TextView textView = binding.textTimeZone;
 
         textView.setOnTouchListener((v, event) -> {
+            v.performClick();
             if (event.getAction() == MotionEvent.ACTION_UP) {
                 int[] textLocation = new int[2];
                 textView.getLocationOnScreen(textLocation);
                 if (event.getRawX() >= textLocation[0] + textView.getWidth() - textView.getTotalPaddingRight()){
                     toogleTimeZoneModal();
-                    return true;
+                }
+            }
+            return true;
+        });
+
+        TextView textView2 = binding.textCurrency;
+
+        textView2.setOnTouchListener((v, event) -> {
+            v.performClick();
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                int[] textLocation = new int[2];
+                textView2.getLocationOnScreen(textLocation);
+                if (event.getRawX() >= textLocation[0] + textView2.getWidth() - textView2.getTotalPaddingRight()){
+                    toogleOtherModal(R.layout.fragment_home_currency_modal);
                 }
             }
             return true;
@@ -86,8 +98,8 @@ public class HomeFragment extends Fragment {
     }
 
     public void toogleTimeZoneModal(){
-        View view = getLayoutInflater().inflate(R.layout.fragment_home_timezone_modal,null);
-        BottomSheetDialog dialog = new BottomSheetDialog(getContext());
+        View view = getLayoutInflater().inflate(R.layout.fragment_home_timezone_modal,binding.getRoot(),false);
+        BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
         TextView txt = view.findViewById(R.id.timeZoneSubHeader);
         TimeZone tz = TimeZone.getTimeZone("GMT-06:00");
         Calendar c = Calendar.getInstance(tz);
@@ -98,13 +110,17 @@ public class HomeFragment extends Fragment {
             meridiam = " PM";
             hour -= 12;
         }
-
-
         String time = hour+":" + (minute<10?"0"+minute:minute) + meridiam;
         txt.setText(time);
 
         dialog.setContentView(view);
-        //dialog.setCancelable(false);
+        dialog.show();
+    }
+
+    public void toogleOtherModal(int layout){
+        View view = getLayoutInflater().inflate(layout,binding.getRoot(),false);
+        BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
+        dialog.setContentView(view);
         dialog.show();
     }
 

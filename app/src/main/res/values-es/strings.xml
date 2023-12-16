@@ -20,7 +20,7 @@
     <string name="crc_amount">Cantidad en CRC</string>
     <string name="crc_value">%1$.2f CRC</string>
     <string name="menu_food">Comida Tradicional</string>
-    <string name="food_main_label">Costa Rica es un país con muchas culturas por lo que puedes encontrar comida de todo el mundo, pero esta es una lista de la comida más tradicional que debes comer.</string>
+    <string name="food_main_label">Costa Rica es un país con muchas culturas por lo que puedes encontrar comida de todo el mundo, pero esta es una lista de comida tradicional que debes comer.</string>
     <string name="food_1">Pinto</string>
     <string name="food_2">Olla de Carne</string>
     <string name="food_3">Chifrijo</string>
@@ -43,7 +43,7 @@
     <string name="food_9_description">El plato Casado es el número uno que encontrarás en todas las sodas (restaurantes locales) en todo el país. El plato consiste en arroz, frijoles negros, plátano, ensalada, tortilla y proteína que consiste en pollo, res, cerdo o pescado. Muchas veces a este plato se le incorpora uno o dos huevos fritos. La cocina es sencilla y deliciosa, mientras que los platos son abundantes y muy económicos.</string>
     <string name="error_exchange_rate">Error consultando el tipo de cambio, favor intentar nuevamente en unos momentos</string>
     <string name="food_10">Vigoron</string>
-    <string name="food_10_description">Plato tipico costarricense de la costa pacífica. Buen chicharron de cerdo acompañado de ensalada de repollo con buen limón, chimichurri de tomate y yuca sanchochada muy suavecita</string>
+    <string name="food_10_description">Plato típico costarricense de la costa pacífica. Buen chicharron de cerdo acompañado de ensalada de repollo con buen limón, chimichurri de tomate y yuca sanchochada muy suavecita</string>
     <string name="food_11">Rice and beans</string>
     <string name="food_11_description">El típico y tradicional rice and beans, es un plato muy popular que se elabora a base de arroz y frijoles cocidos en leche de coco. Generalmente se complementa con un delicioso pollo en salsa, lo cual le da el toque especial (si, se le conoce por su nombre en ingles)</string>
     <string name="food_12">Arroz con pollo</string>
@@ -73,4 +73,7 @@
     <string name="home_slider_8">Museo de los niños</string>
     <string name="home_slider_9">Parque Zarcero</string>
     <string name="home_slider_10">Sanatorio Duran</string>
+    <string name="home_currency_disclaimer">La mayoría de los lugares en Costa Rica aceptan tarjetas de crédito (especialmente Visa o MasterCard), el efectivo se puede usar en transporte público, souvenirs o para comprar comida callejera. Algunos lugares pueden aceptar dólares en efectivo a un tipo de cambio más bajo, así que evite pagar de más y trate de conseguir colones en el aeropuerto.</string>
+    <string name="number_validation">Número muy grande, porfavor utiliza un valor mas pequeño</string>
+    <string name="country_flag">Bandera del país</string>
 </resources>

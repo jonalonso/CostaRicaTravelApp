@@ -3,11 +3,9 @@ package com.example.costaricatravel;
 
 import android.os.Bundle;
 
-import com.example.costaricatravel.utils.TextViewPainter;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -28,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);

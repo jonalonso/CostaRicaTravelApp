@@ -8,21 +8,14 @@
     <TextView
         android:id="@+id/timeZoneHeader"
         android:paddingTop="6dp"
+        android:paddingBottom="30dp"
+        android:paddingHorizontal="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_centerHorizontal="true"
-        android:text="@string/time_actual"
+        android:justificationMode="inter_word"
+        android:text="@string/home_currency_disclaimer"
         android:textColor="@color/nav_bar"/>
-
-    <TextView
-        android:id="@+id/timeZoneSubHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/nav_bar"
-        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/timeZoneHeader"
-        android:paddingBottom="30dp"/>
 
 </RelativeLayout>

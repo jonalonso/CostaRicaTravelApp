@@ -13,6 +13,7 @@
         android:layout_centerHorizontal="true"
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:justificationMode="inter_word"
+        android:textColor="@color/nav_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/official_currency"/>
@@ -24,6 +25,9 @@
         android:inputType="number"
         android:enabled="false"
         android:gravity="center_horizontal"
+        android:textColor="@color/nav_bar"
+        android:textColorHint="@color/nav_bar"
+        android:backgroundTint="@color/nav_bar"
         android:hint="@string/crc_amount"
         android:id="@+id/CurrencyAmount"/>
 

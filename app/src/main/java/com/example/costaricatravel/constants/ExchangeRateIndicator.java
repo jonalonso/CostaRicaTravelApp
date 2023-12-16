@@ -3,7 +3,7 @@ package com.example.costaricatravel.constants;
 import com.example.costaricatravel.R;
 
 public enum ExchangeRateIndicator {
-    Dolar("318","NONE", R.string.currency_dolar,R.drawable.united_states_flag),
+    Dolar("317","NONE", R.string.currency_dolar,R.drawable.united_states_flag),
     Euro("333","USD",R.string.currency_eur, R.drawable.european_union),
     LibraEsterlina("330","USD",R.string.currency_pound,R.drawable.united_kingdom),
     PesoMex("332","CRC",R.string.currency_mx,R.drawable.mexican_flag),
