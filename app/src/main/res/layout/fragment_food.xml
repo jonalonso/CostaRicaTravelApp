@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.food.FoodFragment">
+    tools:context="com.jsalazar.costaricatravel.ui.food.FoodFragment">
     <TextView
         android:id="@+id/TextFood"
         android:layout_centerHorizontal="true"

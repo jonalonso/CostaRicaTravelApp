@@ -8,25 +8,25 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.costaricatravel.ui.home.HomeFragment"
+        android:name="com.jsalazar.costaricatravel.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_places"
-        android:name="com.example.costaricatravel.ui.Places.PlacesFragment"
+        android:name="com.jsalazar.costaricatravel.ui.Places.PlacesFragment"
         android:label="@string/menu_places"
         tools:layout="@layout/fragment_places" />
 
     <fragment
         android:id="@+id/nav_food"
-        android:name="com.example.costaricatravel.ui.food.FoodFragment"
+        android:name="com.jsalazar.costaricatravel.ui.food.FoodFragment"
         android:label="@string/menu_food"
         tools:layout="@layout/fragment_food" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.costaricatravel.ui.ExchangeRate.ExchangeRateFragment"
+        android:name="com.jsalazar.costaricatravel.ui.ExchangeRate.ExchangeRateFragment"
         android:label="@string/menu_exchange_rate"
         tools:layout="@layout/fragment_exchange_rate" />
 </navigation>

@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.costaricatravel.MainActivity">
+    tools:context="com.jsalazar.costaricatravel.MainActivity">
     <TextView
         android:id="@+id/TextCurrency"
         android:layout_centerHorizontal="true"
@@ -23,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/TextCurrency"
         android:inputType="number"
+        android:autofillHints="money"
         android:enabled="false"
         android:gravity="center_horizontal"
         android:textColor="@color/nav_bar"
