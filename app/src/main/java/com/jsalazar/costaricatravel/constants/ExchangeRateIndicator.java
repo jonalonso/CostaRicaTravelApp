@@ -10,7 +10,8 @@ public enum ExchangeRateIndicator {
     Cordoba("340","CRC",R.string.currency_cor,R.drawable.nicaragua_flag),
     RealBrasilero("346","CRC",R.string.currency_br,R.drawable.brazil_flag),
     PesoColombiano("345","CRC",R.string.currency_cop,R.drawable.colombia_flag),
-    SolPeruano("3057","CRC",R.string.currency_pen,R.drawable.peru_flag);
+    SolPeruano("3057","CRC",R.string.currency_pen, R.drawable.peru_flag),
+    Quetzal("338","CRC",R.string.currency_gtq,R.drawable.guatemala_flag);
 
     private final String value;
     private final String conversion;

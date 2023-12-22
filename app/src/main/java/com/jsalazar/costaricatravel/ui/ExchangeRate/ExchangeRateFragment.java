@@ -1,6 +1,5 @@
 package com.jsalazar.costaricatravel.ui.ExchangeRate;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,6 +22,7 @@ import com.jsalazar.costaricatravel.constants.ExchangeRateIndicator;
 import com.jsalazar.costaricatravel.databinding.FragmentExchangeRateBinding;
 import com.jsalazar.costaricatravel.models.Currency;
 import com.jsalazar.costaricatravel.utils.AdsController;
+import com.jsalazar.costaricatravel.utils.BackgroundTask;
 import com.jsalazar.costaricatravel.utils.HttpRequest;
 import com.jsalazar.costaricatravel.utils.HttpRequestParams;
 import com.jsalazar.costaricatravel.utils.XMLHandler;
@@ -39,6 +39,10 @@ public class ExchangeRateFragment extends Fragment {
     private final int TOTAL_CURRENCIES = 8;
     private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
+
+    //JsonArrayCallback cb = result -> {
+    //    result.toString();
+    //};
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -74,7 +78,7 @@ public class ExchangeRateFragment extends Fragment {
                         }
                     }else{
                         try{
-                            int textValue = Integer.valueOf(s.toString());
+                            int textValue = Integer.parseInt(s.toString());
                             for(Currency cur: currencyArray){
                                 cur.setCustomValue(textValue);
                             }
@@ -88,12 +92,13 @@ public class ExchangeRateFragment extends Fragment {
             }
         });
 
-        new AsyncTask() {
+        new BackgroundTask(ExchangeRateFragment.this.getActivity()) {
             @Override
-            protected Object doInBackground(Object[] objects) {
+            public void doInBackground() {
                 currencyArray.clear();
+                //HttpRequestJSON.getRequest(ExchangeRateFragment.this.getActivity(),"https://api.recope.go.cr/ventas/precio/consumidor",cb);
                 String xmlDolar = request.getRequest(BCCR_API, HttpRequestParams.getMoneyExchangeRateParam(ExchangeRateIndicator.Dolar.getValue()));
-                double DolarValue = Double.valueOf(XMLHandler.readCurrencyValue(xmlDolar));
+                double DolarValue = Double.parseDouble(XMLHandler.readCurrencyValue(xmlDolar));
                 if(DolarValue > 0){
                     currencyArray.add(new Currency(ExchangeRateIndicator.Dolar.getIconId(),ExchangeRateIndicator.Dolar.getLabelId(),DolarValue));
                     int currentPostion=1;
@@ -103,7 +108,7 @@ public class ExchangeRateFragment extends Fragment {
                             continue;
                         }
                         String xmlCurrency = request.getRequest(BCCR_API, HttpRequestParams.getMoneyExchangeRateParam(rate.getValue()));
-                        double CurrencyValue = Double.valueOf(XMLHandler.readCurrencyValue(xmlCurrency));
+                        double CurrencyValue = Double.parseDouble(XMLHandler.readCurrencyValue(xmlCurrency));
                         if(CurrencyValue==0){
                             continue;
                         }
@@ -114,11 +119,10 @@ public class ExchangeRateFragment extends Fragment {
                         }
                     }
                 }
-                return null;
             }
 
             @Override
-            protected void onPostExecute(Object o) {
+            public void onPostExecute() {
                 progress.setVisibility(View.GONE);
                 progress.setProgress(0);
                 if(currencyArray.size()>0) {

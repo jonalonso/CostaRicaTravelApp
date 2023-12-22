@@ -15,6 +15,7 @@
     <string name="currency_eur">%1$.2f Euro EUR</string>
     <string name="currency_cor">%1$.2f Nicaraguan Cordobas NIO</string>
     <string name="currency_pen">%1$.2f Peruvian Sol PEN</string>
+    <string name="currency_gtq">%1$.2f Quetzal GTQ</string>
     <string name="currency_br">%1$.2f Brazilian Reais BRL</string>
     <string name="official_currency">Costa Rica official currency is called \"colon (CRC)\", here you can calculate how much are you going to pay using CRC as base:</string>
     <string name="crc_amount">CRC amount</string>
