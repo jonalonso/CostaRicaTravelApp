@@ -7,11 +7,14 @@ public class Food {
 
     private final String spanish;
 
-    public Food(Integer foodNameId, Integer imgId, Integer descriptionId, String spanish) {
+    private final String priceRange;
+
+    public Food(Integer foodNameId, Integer imgId, Integer descriptionId, String spanish, String price) {
         this.foodNameId = foodNameId;
         this.imgId = imgId;
         this.descriptionId = descriptionId;
         this.spanish = spanish;
+        this.priceRange = price;
     }
 
     public Integer getFoodNameId() {
@@ -29,5 +32,7 @@ public class Food {
     public String getSpanish() {
         return spanish;
     }
+
+    public String getPriceRange(){ return priceRange;}
 
 }

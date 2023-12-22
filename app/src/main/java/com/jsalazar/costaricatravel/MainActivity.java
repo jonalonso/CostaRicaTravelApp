@@ -3,7 +3,7 @@ package com.jsalazar.costaricatravel;
 
 import android.os.Bundle;
 
-import com.example.costaricatravel.R;
+import com.jsalazar.costaricatravel.R;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.navigation.NavigationView;
 
@@ -14,7 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.costaricatravel.databinding.ActivityMainBinding;
+import com.jsalazar.costaricatravel.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {

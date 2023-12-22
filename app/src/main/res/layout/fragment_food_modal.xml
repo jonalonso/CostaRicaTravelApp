@@ -43,6 +43,31 @@
             android:src="@drawable/ic_speak" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearFoodModal"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/LinearPriceRange">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:text="@string/price_estimation"
+            android:textColor="@color/nav_bar"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/priceRangeTxt"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nav_bar"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
+
+    </LinearLayout>
     <TextView
         android:id="@+id/foodDescription"
         android:layout_width="wrap_content"
@@ -52,7 +77,7 @@
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_centerHorizontal="true"
         android:justificationMode="inter_word"
-        android:layout_below="@id/LinearFoodModal"
+        android:layout_below="@id/LinearPriceRange"
         />
 
 

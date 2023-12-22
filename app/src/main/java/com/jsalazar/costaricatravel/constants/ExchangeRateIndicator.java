@@ -1,6 +1,6 @@
 package com.jsalazar.costaricatravel.constants;
 
-import com.example.costaricatravel.R;
+import com.jsalazar.costaricatravel.R;
 
 public enum ExchangeRateIndicator {
     Dolar("317","NONE", R.string.currency_dolar,R.drawable.united_states_flag),

@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.costaricatravel'
+    namespace 'com.jsalazar.costaricatravel'
     compileSdk 34
 
 
     defaultConfig {
-        applicationId "com.example.costaricatravel"
+        applicationId "com.jsalazar.costaricatravel"
         minSdk 28
         targetSdk 34
         versionCode 110

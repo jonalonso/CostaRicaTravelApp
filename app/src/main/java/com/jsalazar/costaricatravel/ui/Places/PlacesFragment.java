@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.costaricatravel.databinding.FragmentPlacesBinding;
+import com.jsalazar.costaricatravel.databinding.FragmentPlacesBinding;
 import com.jsalazar.costaricatravel.utils.AdsController;
 
 public class PlacesFragment extends Fragment {

@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.costaricatravel.R;
+import com.jsalazar.costaricatravel.R;
 import com.jsalazar.costaricatravel.models.Currency;
 
 import java.math.BigDecimal;

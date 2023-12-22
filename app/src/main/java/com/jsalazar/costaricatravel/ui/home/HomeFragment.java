@@ -13,8 +13,8 @@ import androidx.fragment.app.Fragment;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-import com.example.costaricatravel.R;
-import com.example.costaricatravel.databinding.FragmentHomeBinding;
+import com.jsalazar.costaricatravel.R;
+import com.jsalazar.costaricatravel.databinding.FragmentHomeBinding;
 import com.jsalazar.costaricatravel.utils.AdsController;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -60,13 +60,12 @@ public class HomeFragment extends Fragment {
         }
 
         ImageSlider imageSlider = binding.imageSlider;
-        imageSlider.setImageList(finalList);
+        imageSlider.setImageList(finalList,ScaleTypes.FIT);
 
 
         TextView textView = binding.textTimeZone;
 
         textView.setOnTouchListener((v, event) -> {
-            v.performClick();
             if (event.getAction() == MotionEvent.ACTION_UP) {
                 int[] textLocation = new int[2];
                 textView.getLocationOnScreen(textLocation);
@@ -80,12 +79,11 @@ public class HomeFragment extends Fragment {
         TextView textView2 = binding.textCurrency;
 
         textView2.setOnTouchListener((v, event) -> {
-            v.performClick();
             if (event.getAction() == MotionEvent.ACTION_UP) {
                 int[] textLocation = new int[2];
                 textView2.getLocationOnScreen(textLocation);
                 if (event.getRawX() >= textLocation[0] + textView2.getWidth() - textView2.getTotalPaddingRight()){
-                    toogleOtherModal(R.layout.fragment_home_currency_modal);
+                    toogleOtherModal(R.string.home_currency_disclaimer);
                 }
             }
             return true;
@@ -94,12 +92,23 @@ public class HomeFragment extends Fragment {
         TextView textView3 = binding.textLanguage;
 
         textView3.setOnTouchListener((v, event) -> {
-            v.performClick();
             if (event.getAction() == MotionEvent.ACTION_UP) {
                 int[] textLocation = new int[2];
                 textView3.getLocationOnScreen(textLocation);
                 if (event.getRawX() >= textLocation[0] + textView3.getWidth() - textView3.getTotalPaddingRight()){
-                    toogleOtherModal(R.layout.fragment_home_language_modal);
+                    toogleOtherModal(R.string.home_language_disclaimer);
+                }
+            }
+            return true;
+        });
+
+        TextView textView4 = binding.textTip;
+        textView4.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                int[] textLocation = new int[2];
+                textView4.getLocationOnScreen(textLocation);
+                if (event.getRawX() >= textLocation[0] + textView4.getWidth() - textView4.getTotalPaddingRight()){
+                    toogleOtherModal(R.string.home_tip_disclaimer);
                 }
             }
             return true;
@@ -130,9 +139,11 @@ public class HomeFragment extends Fragment {
         dialog.show();
     }
 
-    public void toogleOtherModal(int layout){
-        View view = getLayoutInflater().inflate(layout,binding.getRoot(),false);
+    public void toogleOtherModal(int text){
+        View view = getLayoutInflater().inflate(R.layout.fragment_home_default_modal,binding.getRoot(),false);
         BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
+        TextView txt = view.findViewById(R.id.homePageDefaultModalText);
+        txt.setText(text);
         dialog.setContentView(view);
         dialog.show();
     }

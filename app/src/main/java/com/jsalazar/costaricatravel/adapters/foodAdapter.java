@@ -7,9 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.costaricatravel.R;
+import com.jsalazar.costaricatravel.R;
 import com.jsalazar.costaricatravel.models.Food;
 import com.jsalazar.costaricatravel.models.FoodRow;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -74,8 +75,16 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
         img.setImageResource(element.getImgId());
 
         img = view.findViewById(R.id.imgSpeakFoodModal);
-
         img.setOnClickListener(v ->t1.speak(element.getSpanish(),TextToSpeech.QUEUE_FLUSH,null,null));
+
+        if(element.getPriceRange().equals("")){
+            LinearLayout priceLayout = view.findViewById(R.id.LinearPriceRange);
+            priceLayout.setVisibility(View.GONE);
+        }else{
+            txt = view.findViewById(R.id.priceRangeTxt);
+            txt.setText(element.getPriceRange());
+
+        }
 
 
         dialog.setContentView(view);

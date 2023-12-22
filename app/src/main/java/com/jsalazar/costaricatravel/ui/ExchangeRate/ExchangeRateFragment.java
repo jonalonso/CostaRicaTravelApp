@@ -17,10 +17,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.costaricatravel.R;
+import com.jsalazar.costaricatravel.R;
 import com.jsalazar.costaricatravel.adapters.currencyAdapter;
 import com.jsalazar.costaricatravel.constants.ExchangeRateIndicator;
-import com.example.costaricatravel.databinding.FragmentExchangeRateBinding;
+import com.jsalazar.costaricatravel.databinding.FragmentExchangeRateBinding;
 import com.jsalazar.costaricatravel.models.Currency;
 import com.jsalazar.costaricatravel.utils.AdsController;
 import com.jsalazar.costaricatravel.utils.HttpRequest;

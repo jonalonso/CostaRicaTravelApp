@@ -6,7 +6,7 @@
 
 
     <TextView
-        android:id="@+id/languageHeader"
+        android:id="@+id/homePageDefaultModalText"
         android:paddingTop="6dp"
         android:paddingBottom="30dp"
         android:paddingHorizontal="8dp"
@@ -15,7 +15,7 @@
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_centerHorizontal="true"
         android:justificationMode="inter_word"
-        android:text="@string/home_language_disclaimer"
+        android:text="@string/home_currency_disclaimer"
         android:textColor="@color/nav_bar"/>
 
 </RelativeLayout>

@@ -60,7 +60,7 @@
     <string name="home_3">Currency</string>
     <string name="home_3_description">Colon</string>
     <string name="home_4">Main Language</string>
-    <string name="home_4_description">" Spanish"</string>
+    <string name="home_4_description">Spanish</string>
     <string name="time_actual">Actual Time</string>
     <string name="home_slider_1">Whale Bay</string>
     <string name="home_slider_2">Arenal Volcano</string>
@@ -77,4 +77,10 @@
     <string name="country_flag">Country Flag</string>
     <string name="home_language_disclaimer">The official national language of Costa Rica is Spanish, however English language, as well as the Portuguese, and many other languages, also are being spoken by a percentage of the population.</string>
     <string name="timezone_icon">timezone icon</string>
+    <string name="food_16">Budin</string>
+    <string name="food_16_description">This is a kind of bread made out of old and dry baguette, milk, butter and sugar, some people add raisins to it, usually served with condensed milk</string>
+    <string name="price_estimation">"Price estimation: "</string>
+    <string name="tip">Tip</string>
+    <string name="tip_value" translatable="false">10%</string>
+    <string name="home_tip_disclaimer">10% tip fee will be charged on your restaurant bill, so it is not mandatory to any extra amount, but it is up to you.</string>
 </resources>

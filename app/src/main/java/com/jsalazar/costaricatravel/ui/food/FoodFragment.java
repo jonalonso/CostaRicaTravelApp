@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.jsalazar.costaricatravel.adapters.foodAdapter;
-import com.example.costaricatravel.databinding.FragmentFoodBinding;
+import com.jsalazar.costaricatravel.databinding.FragmentFoodBinding;
 import com.jsalazar.costaricatravel.itemGenerator.foodGenerator;
 import com.jsalazar.costaricatravel.models.FoodRow;
 import com.jsalazar.costaricatravel.utils.AdsController;
