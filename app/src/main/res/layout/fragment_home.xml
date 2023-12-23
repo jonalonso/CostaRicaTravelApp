@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:fadeScrollbars="false"
         android:layout_below="@id/image_slider"
-        android:layout_marginBottom="51dp">
+        android:layout_marginBottom="@dimen/ads_margin">
         <RelativeLayout
             android:layout_width="match_parent"
             android:paddingTop="5dp"

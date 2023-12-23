@@ -86,9 +86,15 @@
     <string name="home_tip_disclaimer">10% tip fee will be charged on your restaurant bill, so it is not mandatory to any extra amount, but it is up to you.</string>
     <string name="gas_station">Gas Station Service</string>
     <string name="gas_station_value">" Assisted-Service"</string>
-    <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country"</string>
     <string name="gas_type_1" translatable="false">Super</string>
     <string name="gas_type_2" translatable="false">Regular</string>
     <string name="gas_type_3" translatable="false">Diesel</string>
     <string name="gas_price">₡%1d per liter</string>
+    <string name="currency_yuan" translatable="false">%1$.2f Yuan CNY</string>
+    <string name="currency_india">%1$.2f Indian Rupee INR</string>
+    <string name="currency_south_korea">%1$.2f South Korean Won KRW</string>
+    <string name="currency_argentina">%1$.2f Argentinan Peso ARS</string>
+    <string name="currency_denmark">%1$.2f Danish Krone DKK</string>
+    <string name="currency_thailand">%1$.2f Thailand Bath THB</string>
+    <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country, Also you will find a lot of Charging Stations for electric cars, and there are 3 different types of gasoline you can get in Costa Rica:"</string>
 </resources>

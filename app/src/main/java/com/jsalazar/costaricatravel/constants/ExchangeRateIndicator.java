@@ -11,7 +11,13 @@ public enum ExchangeRateIndicator {
     RealBrasilero("346","CRC",R.string.currency_br,R.drawable.brazil_flag),
     PesoColombiano("345","CRC",R.string.currency_cop,R.drawable.colombia_flag),
     SolPeruano("3057","CRC",R.string.currency_pen, R.drawable.peru_flag),
-    Quetzal("338","CRC",R.string.currency_gtq,R.drawable.guatemala_flag);
+    Quetzal("338","CRC",R.string.currency_gtq,R.drawable.guatemala_flag),
+    Yuan("3364","CRC",R.string.currency_yuan,R.drawable.china_flag),
+    Rupee("21267","CRC",R.string.currency_india,R.drawable.india_flag),
+    Won("337","CRC",R.string.currency_south_korea,R.drawable.south_korea_flag),
+    Argentina("344","CRC",R.string.currency_argentina,R.drawable.argentina_flag),
+    Dinamarca("342","CRC",R.string.currency_denmark,R.drawable.denmark_flag),
+    Thailandia("21262","CRC",R.string.currency_thailand,R.drawable.thailand_flag);
 
     private final String value;
     private final String conversion;

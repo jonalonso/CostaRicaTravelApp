@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:listSelector="@android:color/transparent"
-        android:paddingBottom="60dp"/>
+        android:layout_marginBottom="@dimen/ads_margin"/>
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"

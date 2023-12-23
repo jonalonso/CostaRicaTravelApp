@@ -23,7 +23,7 @@
         android:layout_below="@+id/TextFood"
         android:layout_width="match_parent"
         android:listSelector="@android:color/transparent"
-        android:paddingBottom="60dp"
+        android:paddingBottom="@dimen/ads_margin"
         android:layout_height="wrap_content"/>
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"

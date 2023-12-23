@@ -74,6 +74,11 @@
     <string name="home_tip_disclaimer">En Costa Rica se cobrará una tarifa 10% de propina en la factura de su restaurante, por lo que no es obligatorio dejar ningún monto adicional, pero depende de usted.</string>
     <string name="gas_station">Gasolinerias</string>
     <string name="gas_station_value">Servicio asistido</string>
-    <string name="home_gas_station_disclaimer">" Tan pronto como llegues a la gasolinera deberás esperar a que una persona te ayude a llenar el tanque, se acepta efectivo y tarjetas de crédito en todo el país."</string>
+    <string name="home_gas_station_disclaimer">Tan pronto como llegues a la gasolinera, deberás esperar a que una persona te ayude a llenar el tanque, se acepta efectivo y tarjetas de crédito en todo el país. También encontrarás muchas estaciones de carga para autos eléctricos. , y hay 3 tipos diferentes de gasolina que puedes conseguir en Costa Rica:</string>
     <string name="gas_price">₡%1d por litro</string>
+    <string name="currency_india">%1$.2f Rupee India INR</string>
+    <string name="currency_south_korea">%1$.2f Won Sur Coreano KRW</string>
+    <string name="currency_argentina">%1$.2f Peso Argentino ARS</string>
+    <string name="currency_denmark">%1$.2f Corona Danesa DKK</string>
+    <string name="currency_thailand">%1$.2f Bath Tailandia THB</string>
 </resources>

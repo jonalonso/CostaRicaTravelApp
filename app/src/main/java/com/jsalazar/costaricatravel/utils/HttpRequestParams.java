@@ -1,6 +1,7 @@
 package com.jsalazar.costaricatravel.utils;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
@@ -11,6 +12,18 @@ public class HttpRequestParams {
 
     public static Map<String,String> getMoneyExchangeRateParam(String indicator){
         Date date = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+        int hourOfDay = c.get(Calendar.HOUR_OF_DAY);
+        if(dayOfWeek == 7){ //saturday
+            c.add(Calendar.DAY_OF_YEAR, -1);
+        }else if(dayOfWeek == 1){ //sunday
+            c.add(Calendar.DAY_OF_YEAR, -2);
+        }else if(dayOfWeek == 2 && hourOfDay<9){ //monday before 9am
+            c.add(Calendar.DAY_OF_YEAR, -3);
+        }
+        date = c.getTime();
         Map<String,String> response = new HashMap<>();
         response.put("Indicador",indicator);
         response.put("FechaInicio",DateFor.format(date));
