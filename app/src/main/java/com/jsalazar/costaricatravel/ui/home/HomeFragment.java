@@ -1,8 +1,9 @@
 package com.jsalazar.costaricatravel.ui.home;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -15,8 +16,15 @@ import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.jsalazar.costaricatravel.R;
 import com.jsalazar.costaricatravel.databinding.FragmentHomeBinding;
+import com.jsalazar.costaricatravel.interfaces.JsonArrayCallback;
 import com.jsalazar.costaricatravel.utils.AdsController;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.jsalazar.costaricatravel.utils.BackgroundTask;
+import com.jsalazar.costaricatravel.utils.DrawableTextViewTouched;
+import com.jsalazar.costaricatravel.utils.HttpRequestJSON;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -24,15 +32,20 @@ import java.util.Collections;
 import java.util.TimeZone;
 
 public class HomeFragment extends Fragment {
-
     private FragmentHomeBinding binding;
 
-    private final int MAX_SLIDER_ELEMENTS = 5;
+    private JSONArray cb_result;
 
+    JsonArrayCallback cb = result -> cb_result = result;
+
+
+
+    @SuppressLint("ClickableViewAccessibility")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
+        final int MAX_SLIDER_ELEMENTS = 5;
         View root = binding.getRoot();
 
         ArrayList<SlideModel> tmpImgList = new ArrayList<>();
@@ -49,67 +62,57 @@ public class HomeFragment extends Fragment {
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", getString(R.string.home_slider_10), ScaleTypes.FIT));
 
 
-        //
-
         Collections.shuffle(tmpImgList);
 
 
-        ArrayList<SlideModel> finalList = new ArrayList<>() ;
-        for(int i=0;i<MAX_SLIDER_ELEMENTS;i++){
-            finalList.add(tmpImgList.get(i));
-        }
-
+        ArrayList<SlideModel> finalList = new ArrayList<>( tmpImgList.subList(0,MAX_SLIDER_ELEMENTS));
         ImageSlider imageSlider = binding.imageSlider;
         imageSlider.setImageList(finalList,ScaleTypes.FIT);
 
 
-        TextView textView = binding.textTimeZone;
+        new BackgroundTask(this.getActivity()) {
+            @Override
+            public void doInBackground() {
+                HttpRequestJSON.getRequest(this.getContext(),"https://api.recope.go.cr/ventas/precio/consumidor",cb);
+            }
 
-        textView.setOnTouchListener((v, event) -> {
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                int[] textLocation = new int[2];
-                textView.getLocationOnScreen(textLocation);
-                if (event.getRawX() >= textLocation[0] + textView.getWidth() - textView.getTotalPaddingRight()){
-                    toogleTimeZoneModal();
-                }
+            @Override
+            public void onPostExecute() {
+
+            }
+        }.execute();
+
+        binding.textTimeZone.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleTimeZoneModal();
             }
             return true;
         });
 
-        TextView textView2 = binding.textCurrency;
-
-        textView2.setOnTouchListener((v, event) -> {
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                int[] textLocation = new int[2];
-                textView2.getLocationOnScreen(textLocation);
-                if (event.getRawX() >= textLocation[0] + textView2.getWidth() - textView2.getTotalPaddingRight()){
-                    toogleOtherModal(R.string.home_currency_disclaimer);
-                }
+        binding.textCurrency.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.home_currency_disclaimer);
             }
             return true;
         });
 
-        TextView textView3 = binding.textLanguage;
-
-        textView3.setOnTouchListener((v, event) -> {
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                int[] textLocation = new int[2];
-                textView3.getLocationOnScreen(textLocation);
-                if (event.getRawX() >= textLocation[0] + textView3.getWidth() - textView3.getTotalPaddingRight()){
-                    toogleOtherModal(R.string.home_language_disclaimer);
-                }
+        binding.textLanguage.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.home_language_disclaimer);
             }
             return true;
         });
 
-        TextView textView4 = binding.textTip;
-        textView4.setOnTouchListener((v, event) -> {
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                int[] textLocation = new int[2];
-                textView4.getLocationOnScreen(textLocation);
-                if (event.getRawX() >= textLocation[0] + textView4.getWidth() - textView4.getTotalPaddingRight()){
-                    toogleOtherModal(R.string.home_tip_disclaimer);
-                }
+        binding.textTip.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.home_tip_disclaimer);
+            }
+            return true;
+        });
+
+        binding.textGasStation.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleGasModal();
             }
             return true;
         });
@@ -144,6 +147,42 @@ public class HomeFragment extends Fragment {
         BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
         TextView txt = view.findViewById(R.id.homePageDefaultModalText);
         txt.setText(text);
+        dialog.setContentView(view);
+        dialog.show();
+    }
+
+    public void toogleGasModal(){
+        View view = getLayoutInflater().inflate(R.layout.fragment_home_gas_station_modal,binding.getRoot(),false);
+        BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
+
+        TextView txtGas1 = view.findViewById(R.id.gas1);
+        TextView txtGas2 = view.findViewById(R.id.gas2);
+        TextView txtGas3 = view.findViewById(R.id.gas3);
+        Context context = getContext();
+
+        if(cb_result!=null && context !=null){
+            //nomprod
+            for(int index=0;index<cb_result.length();index++){
+                try {
+                    JSONObject singleElement = cb_result.getJSONObject(index);
+                    String productName = singleElement.getString("nomprod").toLowerCase();
+                    if(productName.contains("super")){
+                        int intValue = (int) Math.round(singleElement.getDouble("preciototal"));
+                        txtGas1.setText(context.getString(R.string.gas_price,intValue));
+                    }else if(productName.contains("regular")){
+                        int intValue = (int) Math.round(singleElement.getDouble("preciototal"));
+                        txtGas2.setText(context.getString(R.string.gas_price,intValue));
+                    }else if(productName.contains("diesel")){
+                        int intValue = (int) Math.round(singleElement.getDouble("preciototal"));
+                        txtGas3.setText(context.getString(R.string.gas_price,intValue));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+
         dialog.setContentView(view);
         dialog.show();
     }

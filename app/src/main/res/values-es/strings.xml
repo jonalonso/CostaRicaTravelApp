@@ -12,20 +12,14 @@
     <string name="currency_pound">%1$.2f Libra GBP</string>
     <string name="currency_mx">%1$.2f Peso Mexicano MXN</string>
     <string name="currency_cop">%1$.2f Peso Colombiano COP</string>
-    <string name="currency_eur">%1$.2f Euro EUR</string>
     <string name="currency_cor">%1$.2f Cordobas NIO</string>
     <string name="currency_pen">%1$.2f Sol Peruano PEN</string>
     <string name="currency_br">%1$.2f Real BRL</string>
-    <string name="currency_gtq">%1$.2f Quetzal GTQ</string>
     <string name="official_currency">La moneda oficial de Costa Rica se llama \"colon (CRC)\", aquí puedes calcular cuánto vas a pagar usando CRC como base:</string>
     <string name="crc_amount">Cantidad en CRC</string>
-    <string name="crc_value">%1$.2f CRC</string>
     <string name="menu_food">Comida Tradicional</string>
     <string name="food_main_label">Costa Rica es un país con muchas culturas por lo que puedes encontrar comida de todo el mundo, pero esta es una lista de comida tradicional que debes comer.</string>
-    <string name="food_1">Pinto</string>
     <string name="food_2">Olla de Carne</string>
-    <string name="food_3">Chifrijo</string>
-    <string name="food_4">Tamales</string>
     <string name="food_1_description">El pinto es el plato más tradicional para el desayuno (pero también lo puedes comer en el almuerzo o en la cena). Está hecho de arroz y frijoles mezclados, lo puedes encontrar en todo el país.</string>
     <string name="food_2_description">La olla de carne es una sopa tradicional hecha con carne de res y muchas verduras, que generalmente se encuentra en todo el país.</string>
     <string name="food_3_description">El chifrijo es un plato tradicional a base de arroz, frijoles, pico de gallo (tomate picado mezclado con especies) y cerdo, servido ocasionalmente con aguacate y tortillas fritas</string>
@@ -36,11 +30,8 @@
     <string name="food_5_description">El arroz con leche es un postre típico hecho cocinando lentamente arroz con leche y azúcar. Se sirve frío o caliente y se le suele espolvorear canela, vainilla o cáscara de limón por encima para aromatizarlo</string>
     <string name="food_6">Picadillo de Chayote</string>
     <string name="food_6_description">Un delicioso picadillo de chayote es uno de los platos predilectos que los costarricenses quieren tener en su mesa. Generalmente lo degustan durante un almuerzo o cena. Solo o acompañado es delicioso</string>
-    <string name="food_7">Chorreadas</string>
     <string name="food_7_description">Chorreadas son panqueques tradicionales de Costa Rica que se preparan con maíz fresco y generalmente, se sirven para desayunar, aunque también se pueden disfrutar en el almuerzo o como aperitivo. Estos panqueques suelen ser dulces, pero también tienen su versión salada</string>
-    <string name="food_8">Empanadas</string>
     <string name="food_8_description">Empanadas costarricenses típicas (trigo y maíz): rellenas de carne con pasas y de pollo con papas, frijoles, queso o cualqueir otro tipo de relleno es cocinada al horno o frita en aceite o grasa. Se suelen servir a la hora del café</string>
-    <string name="food_9">Casado</string>
     <string name="food_9_description">El plato Casado es el número uno que encontrarás en todas las sodas (restaurantes locales) en todo el país. El plato consiste en arroz, frijoles negros, plátano, ensalada, tortilla y proteína que consiste en pollo, res, cerdo o pescado. Muchas veces a este plato se le incorpora uno o dos huevos fritos. La cocina es sencilla y deliciosa, mientras que los platos son abundantes y muy económicos.</string>
     <string name="error_exchange_rate">Error consultando el tipo de cambio, favor intentar nuevamente en unos momentos</string>
     <string name="food_10">Vigorón</string>
@@ -51,9 +42,7 @@
     <string name="food_12_description">Es usual encontrar en las reuniones de familiares de los ticos un plato de arroz con pollo, acompañado de papas tostadas y frijoles molidos, algunas veces con ensalada de caracolitos, ensalada rusa o ensalada verde.</string>
     <string name="food_13">Agua dulce</string>
     <string name="food_13_description">El Agua Dulce se prepara con agua o leche y la tapa de dulce, un producto que por años se ha elaborado en trapiches donde intervienen pequeñas industrias familiares, es una bebida muy gustada por los niños y los adultos</string>
-    <string name="food_14">Ceviche</string>
     <string name="food_14_description">El ceviche a la tica es un platillo de predilección entre los comensales costarricenses, a base de un delicioso pescado y otros elementos que lo hacen una maravillosa entrada.</string>
-    <string name="food_15">Churchil</string>
     <string name="food_15_description">El churchill en si es un granizado que tiene los ingredientes básicos (hielo escarchado, sirope y leche condensada) con la variante de que se le agregan ingredientes como helado, leche en polvo, frutas picadas</string>
     <string name="home_1">Zona Horaria</string>
     <string name="home_1_description">UTC-6 (CST)</string>
@@ -67,7 +56,6 @@
     <string name="home_slider_1">Bahía Ballena</string>
     <string name="home_slider_2">Volcán Arenal</string>
     <string name="home_slider_3">Río Celeste</string>
-    <string name="home_slider_4">Fortuna</string>
     <string name="home_slider_5">Isla del coco</string>
     <string name="home_slider_6">Ruinas de Cartago</string>
     <string name="home_slider_7">Parque La Sabana</string>
@@ -84,4 +72,8 @@
     <string name="price_estimation">"Precio estimado: "</string>
     <string name="tip">Propinas</string>
     <string name="home_tip_disclaimer">En Costa Rica se cobrará una tarifa 10% de propina en la factura de su restaurante, por lo que no es obligatorio dejar ningún monto adicional, pero depende de usted.</string>
+    <string name="gas_station">Gasolinerias</string>
+    <string name="gas_station_value">Servicio asistido</string>
+    <string name="home_gas_station_disclaimer">" Tan pronto como llegues a la gasolinera deberás esperar a que una persona te ayude a llenar el tanque, se acepta efectivo y tarjetas de crédito en todo el país."</string>
+    <string name="gas_price">₡%1d por litro</string>
 </resources>

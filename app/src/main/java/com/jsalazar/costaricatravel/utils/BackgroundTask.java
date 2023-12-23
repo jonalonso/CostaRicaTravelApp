@@ -4,7 +4,7 @@ import android.app.Activity;
 
 public abstract class BackgroundTask {
 
-    private Activity activity;
+    private final Activity activity;
     public BackgroundTask(Activity activity) {
         this.activity = activity;
     }
@@ -22,5 +22,9 @@ public abstract class BackgroundTask {
 
     public abstract void doInBackground();
     public abstract void onPostExecute();
+
+    public Activity getContext(){
+        return this.activity;
+    }
 
 }

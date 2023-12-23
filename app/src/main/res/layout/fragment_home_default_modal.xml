@@ -15,7 +15,6 @@
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:layout_centerHorizontal="true"
         android:justificationMode="inter_word"
-        android:text="@string/home_currency_disclaimer"
         android:textColor="@color/nav_bar"/>
 
 </RelativeLayout>

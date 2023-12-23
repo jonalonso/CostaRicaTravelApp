@@ -12,19 +12,19 @@
     <string name="currency_pound">%1$.2f Pound GBP</string>
     <string name="currency_mx">%1$.2f Mexican Peso MXN</string>
     <string name="currency_cop">%1$.2f Colombian Peso COP</string>
-    <string name="currency_eur">%1$.2f Euro EUR</string>
+    <string name="currency_eur" translatable="false">%1$.2f Euro EUR</string>
     <string name="currency_cor">%1$.2f Nicaraguan Cordobas NIO</string>
     <string name="currency_pen">%1$.2f Peruvian Sol PEN</string>
-    <string name="currency_gtq">%1$.2f Quetzal GTQ</string>
+    <string name="currency_gtq" translatable="false">%1$.2f Quetzal GTQ</string>
     <string name="currency_br">%1$.2f Brazilian Reais BRL</string>
     <string name="official_currency">Costa Rica official currency is called \"colon (CRC)\", here you can calculate how much are you going to pay using CRC as base:</string>
     <string name="crc_amount">CRC amount</string>
-    <string name="crc_value">%1$.2f CRC</string>
+    <string name="crc_value" translatable="false">%1$.2f CRC</string>
     <string name="food_main_label">Costa Rica is a country with a lot of cultures so you can find world wide food, but this is a list of the most traditional food you must eat</string>
-    <string name="food_1">Pinto</string>
+    <string name="food_1" translatable="false">Pinto</string>
     <string name="food_2">Meat Pot</string>
-    <string name="food_3">Chifrijo</string>
-    <string name="food_4">Tamales</string>
+    <string name="food_3" translatable="false">Chifrijo</string>
+    <string name="food_4" translatable="false">Tamales</string>
     <string name="food_1_description">Pinto is the most traditional dish for breakfast (but you can eat it for lunch or dinner as well) It is made of rice and beans mixed up, you can find this all over the country</string>
     <string name="food_2_description">Meat pot is the a traditional soup made with beef and many vegetables, usually found all over the country</string>
     <string name="food_3_description">Chifrijo is a traditional dish made of rice, beans, \"Pico de gallo\" (tomato chopped mixed with species) and pork, ocaccionaly served with avocado and chips</string>
@@ -35,11 +35,11 @@
     <string name="food_5_description">Rice pudding is a typical dessert made by slowly cooking rice with milk and sugar. It is served hot or cold and cinnamon, vanilla or lemon peel is usually sprinkled on top to flavor it.</string>
     <string name="food_6">Picadillo de Chayote</string>
     <string name="food_6_description">Picadillo de chayote is a very traditional Costa Rican recipe that combines the chayote fruit with traditional Costa Rican sofrito, spices, and cream. It is often served as a side dish to the Costa Rican casado, which is a main meal</string>
-    <string name="food_7">Chorreadas</string>
+    <string name="food_7" translatable="false">Chorreadas</string>
     <string name="food_7_description">Chorreadas are basically Costa Rican corn pancakes. They can be sweet or savory, and are made from ground fresh corn. They have similar ingredients to a corn tortilla but the fresh corn and milk give them a completely different texture.</string>
-    <string name="food_8">Empanadas</string>
+    <string name="food_8" translatable="false">Empanadas</string>
     <string name="food_8_description">Empanadas are a very popular food in Costa Rica, both because they are easy to make at home, but also because you can buy empanadas on the street in practically every location imaginable.  Bean and cheese empanadas (empanada de frijol con queso) are a popular vegetarian type of empanada. Most other empanadas just have a single filling, but the bean and cheese are a fun take on the traditional filling.</string>
-    <string name="food_9">Casado</string>
+    <string name="food_9" translatable="false">Casado</string>
     <string name="food_9_description">The casado is the most traditional Costa Rican lunch- made up of rice, (black) beans, protein, vegetables- all on one plate.  Since lunch is the main meal of the day in Costa Rica, the casado is the highlight of Costa Rican cuisine.</string>
     <string name="error_exchange_rate">Error getting exchange rates values, please try again later</string>
     <string name="food_10">Vigoron</string>
@@ -50,9 +50,9 @@
     <string name="food_12_description">Rice with Chicken is one of the most popular and traditional Costa Rican dishes, It is the official dish in any social event for example at birthday parties. Maybe because it is so simple to make and you can make it in advance so it is conveniently ready when your guest arrive.</string>
     <string name="food_13">Sweet water</string>
     <string name="food_13_description">This hot drink combines tapa de dulce (Costa Rican brown sugar) and boiling water/milk for a delightful treat.</string>
-    <string name="food_14">Ceviche</string>
+    <string name="food_14" translatable="false">Ceviche</string>
     <string name="food_14_description">This Costa Rican ceviche recipe combines fresh white fish marinated in lime, red bell pepper, cilantro, and onion. It’s a favorite worldwide- and the Costa Rican version is to die for.</string>
-    <string name="food_15">Churchil</string>
+    <string name="food_15" translatable="false">Churchil</string>
     <string name="food_15_description">Churchill is a dessert made up of ice, syrup, condensed milk, powder milk, ice cream and fruits,</string>
     <string name="home_1">TimeZone</string>
     <string name="home_1_description">UTC-6 (CST)</string>
@@ -66,7 +66,7 @@
     <string name="home_slider_1">Whale Bay</string>
     <string name="home_slider_2">Arenal Volcano</string>
     <string name="home_slider_3">Celeste River</string>
-    <string name="home_slider_4">Fortuna</string>
+    <string name="home_slider_4" translatable="false">Fortuna</string>
     <string name="home_slider_5">Cocos Island</string>
     <string name="home_slider_6">Ruins of Cartago</string>
     <string name="home_slider_7">Sabana Park</string>
@@ -84,4 +84,11 @@
     <string name="tip">Tip</string>
     <string name="tip_value" translatable="false">10%</string>
     <string name="home_tip_disclaimer">10% tip fee will be charged on your restaurant bill, so it is not mandatory to any extra amount, but it is up to you.</string>
+    <string name="gas_station">Gas Station Service</string>
+    <string name="gas_station_value">" Assisted-Service"</string>
+    <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country"</string>
+    <string name="gas_type_1" translatable="false">Super</string>
+    <string name="gas_type_2" translatable="false">Regular</string>
+    <string name="gas_type_3" translatable="false">Diesel</string>
+    <string name="gas_price">₡%1d per liter</string>
 </resources>

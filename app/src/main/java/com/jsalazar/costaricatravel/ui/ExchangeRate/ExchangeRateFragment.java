@@ -1,5 +1,6 @@
 package com.jsalazar.costaricatravel.ui.ExchangeRate;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -36,13 +37,9 @@ public class ExchangeRateFragment extends Fragment {
 
     private final ArrayList<Currency> currencyArray = new ArrayList<>();
 
-    private final int TOTAL_CURRENCIES = 8;
+    private final int TOTAL_CURRENCIES = 9;
     private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
-
-    //JsonArrayCallback cb = result -> {
-    //    result.toString();
-    //};
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -92,11 +89,11 @@ public class ExchangeRateFragment extends Fragment {
             }
         });
 
-        new BackgroundTask(ExchangeRateFragment.this.getActivity()) {
+        new BackgroundTask(this.getActivity()) {
             @Override
             public void doInBackground() {
                 currencyArray.clear();
-                //HttpRequestJSON.getRequest(ExchangeRateFragment.this.getActivity(),"https://api.recope.go.cr/ventas/precio/consumidor",cb);
+                //
                 String xmlDolar = request.getRequest(BCCR_API, HttpRequestParams.getMoneyExchangeRateParam(ExchangeRateIndicator.Dolar.getValue()));
                 double DolarValue = Double.parseDouble(XMLHandler.readCurrencyValue(xmlDolar));
                 if(DolarValue > 0){
@@ -128,11 +125,11 @@ public class ExchangeRateFragment extends Fragment {
                 if(currencyArray.size()>0) {
                     editText.setEnabled(true);
                     editText.setText("");
-                    adapter=new currencyAdapter(ExchangeRateFragment.this.getActivity(), currencyArray);
+                    adapter=new currencyAdapter(this.getContext(), currencyArray);
                     list.setVisibility(View.VISIBLE);
                     list.setAdapter(adapter);
                 }else{
-                    Toast.makeText(ExchangeRateFragment.this.getActivity().getApplicationContext(),R.string.error_exchange_rate,Toast.LENGTH_LONG).show();
+                    Toast.makeText(this.getContext(),R.string.error_exchange_rate,Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -144,13 +141,16 @@ public class ExchangeRateFragment extends Fragment {
 
     public void increaseProgress(final int position){
         try {
-            this.getActivity().runOnUiThread(() -> {
-                if (progress != null) {
-                    double percentage = (double) position / this.TOTAL_CURRENCIES;
-                    int value = (int) (percentage * this.MAX_PROGRESS);
-                    progress.setProgress(value);
-                }
-            });
+            Activity activity = this.getActivity();
+            if(activity!=null){
+                activity.runOnUiThread(() -> {
+                    if (progress != null) {
+                        double percentage = (double) position / this.TOTAL_CURRENCIES;
+                        int value = (int) (percentage * this.MAX_PROGRESS);
+                        progress.setProgress(value);
+                    }
+                });
+            }
         }catch (Exception ex){
             Log.d("ExchangeRate", "increaseProgress: " + ex);
         }
