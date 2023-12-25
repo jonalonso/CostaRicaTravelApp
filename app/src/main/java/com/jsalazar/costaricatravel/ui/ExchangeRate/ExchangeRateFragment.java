@@ -49,7 +49,7 @@ public class ExchangeRateFragment extends Fragment {
         super.onAttach(context);
         if (context instanceof fragmentInit) {
             fragmentInit mListener = (fragmentInit) context;
-            mListener.onFragmentInteraction(fragmentId.EXCHANGERATE);
+            mListener.onFragmentInteraction(fragmentId.EXCHANGE_RATE);
         }
     }
 

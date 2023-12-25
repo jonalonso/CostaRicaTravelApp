@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
             case FOOD:
                 return;
             case HOME:
-            case EXCHANGERATE:
+            case EXCHANGE_RATE:
             case PLACES:
             default:
         }
