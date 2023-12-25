@@ -1,6 +1,7 @@
 package com.jsalazar.costaricatravel.ui.ExchangeRate;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -20,7 +21,9 @@ import androidx.fragment.app.Fragment;
 import com.jsalazar.costaricatravel.R;
 import com.jsalazar.costaricatravel.adapters.currencyAdapter;
 import com.jsalazar.costaricatravel.constants.ExchangeRateIndicator;
+import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentExchangeRateBinding;
+import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 import com.jsalazar.costaricatravel.models.Currency;
 import com.jsalazar.costaricatravel.utils.AdsController;
 import com.jsalazar.costaricatravel.utils.BackgroundTask;
@@ -40,6 +43,15 @@ public class ExchangeRateFragment extends Fragment {
     private final int TOTAL_CURRENCIES = 15;
     private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
+
+
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        if (context instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) context;
+            mListener.onFragmentInteraction(fragmentId.EXCHANGERATE);
+        }
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

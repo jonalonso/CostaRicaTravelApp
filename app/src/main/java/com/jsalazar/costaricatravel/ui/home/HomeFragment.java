@@ -15,8 +15,10 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.jsalazar.costaricatravel.R;
+import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentHomeBinding;
 import com.jsalazar.costaricatravel.interfaces.JsonArrayCallback;
+import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 import com.jsalazar.costaricatravel.utils.AdsController;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.jsalazar.costaricatravel.utils.BackgroundTask;
@@ -39,6 +41,13 @@ public class HomeFragment extends Fragment {
     JsonArrayCallback cb = result -> cb_result = result;
 
 
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        if (context instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) context;
+            mListener.onFragmentInteraction(fragmentId.HOME);
+        }
+    }
 
     @SuppressLint("ClickableViewAccessibility")
     public View onCreateView(@NonNull LayoutInflater inflater,

@@ -41,7 +41,7 @@
     <string name="food_8_description">Empanadas are a very popular food in Costa Rica, both because they are easy to make at home, but also because you can buy empanadas on the street in practically every location imaginable.  Bean and cheese empanadas (empanada de frijol con queso) are a popular vegetarian type of empanada. Most other empanadas just have a single filling, but the bean and cheese are a fun take on the traditional filling.</string>
     <string name="food_9" translatable="false">Casado</string>
     <string name="food_9_description">The casado is the most traditional Costa Rican lunch- made up of rice, (black) beans, protein, vegetables- all on one plate.  Since lunch is the main meal of the day in Costa Rica, the casado is the highlight of Costa Rican cuisine.</string>
-    <string name="error_exchange_rate">Error getting exchange rates values, please try again later</string>
+    <string name="error_exchange_rate">Costa Rica Central Bank Service for Exchange Rate unavailable now, please try again later</string>
     <string name="food_10">Vigoron</string>
     <string name="food_10_description">The Costa Rican vigorón is made from chicharrones (fried pork rinds or pork belly), a cabbage and chimichurri salad and with boiled yuca (cassava) and boiled green plantains in the mix, this dish is usually served cold.</string>
     <string name="food_11">Rice and Beans</string>

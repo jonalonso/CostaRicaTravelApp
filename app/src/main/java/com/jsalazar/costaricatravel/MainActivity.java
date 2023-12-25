@@ -3,7 +3,6 @@ package com.jsalazar.costaricatravel;
 
 import android.os.Bundle;
 
-import com.jsalazar.costaricatravel.R;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.navigation.NavigationView;
 
@@ -14,10 +13,12 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.ActivityMainBinding;
+import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements fragmentInit {
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -53,5 +54,17 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onFragmentInteraction(fragmentId fragment) {
+        switch (fragment){
+            case FOOD:
+                return;
+            case HOME:
+            case EXCHANGERATE:
+            case PLACES:
+            default:
+        }
     }
 }
