@@ -6,4 +6,5 @@
     <dimen name="nav_header_height">185dp</dimen>
 
     <dimen name="ads_margin">51dp</dimen>
+    <dimen name="modal_padding_horizontal">8dp</dimen>
 </resources>

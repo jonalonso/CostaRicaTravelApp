@@ -66,7 +66,7 @@
     <string name="home_slider_1">Whale Bay</string>
     <string name="home_slider_2">Arenal Volcano</string>
     <string name="home_slider_3">Celeste River</string>
-    <string name="home_slider_4" translatable="false">Fortuna</string>
+    <string name="home_slider_4" translatable="false">La Fortuna</string>
     <string name="home_slider_5">Cocos Island</string>
     <string name="home_slider_6">Ruins of Cartago</string>
     <string name="home_slider_7">Sabana Park</string>
@@ -97,4 +97,7 @@
     <string name="currency_denmark">%1$.2f Danish Krone DKK</string>
     <string name="currency_thailand">%1$.2f Thailand Bath THB</string>
     <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country, Also you will find a lot of Charging Stations for electric cars, and there are 3 different types of gasoline you can get in Costa Rica:"</string>
+    <string name="help_menu">Help</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some food in Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
 </resources>

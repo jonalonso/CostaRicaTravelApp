@@ -44,7 +44,7 @@ public class ExchangeRateFragment extends Fragment {
     private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
 
-
+    @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         if (context instanceof fragmentInit) {

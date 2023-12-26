@@ -81,4 +81,6 @@
     <string name="currency_argentina">%1$.2f Peso Argentino ARS</string>
     <string name="currency_denmark">%1$.2f Corona Danesa DKK</string>
     <string name="currency_thailand">%1$.2f Bath Tailandia THB</string>
+    <string name="help_menu">Ayuda</string>
+    <string name="info_modal_food">Recomendamos visitar una \"Soda\" para comer en Costa Rica, obtendrá los mejores precios en esos pequeños restaurantes. Los precios mostrados aquí son una estimación basada en cuanto los costarricenses que están dispuestos a pagar.</string>
 </resources>

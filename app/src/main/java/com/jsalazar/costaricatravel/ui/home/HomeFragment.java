@@ -41,19 +41,15 @@ public class HomeFragment extends Fragment {
     JsonArrayCallback cb = result -> cb_result = result;
 
 
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-        if (context instanceof fragmentInit) {
-            fragmentInit mListener = (fragmentInit) context;
-            mListener.onFragmentInteraction(fragmentId.HOME);
-        }
-    }
-
     @SuppressLint("ClickableViewAccessibility")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
+        if (this.getContext() instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) this.getContext();
+            mListener.onFragmentInteraction(fragmentId.HOME);
+        }
         final int MAX_SLIDER_ELEMENTS = 5;
         View root = binding.getRoot();
 
@@ -93,7 +89,7 @@ public class HomeFragment extends Fragment {
 
         binding.textTimeZone.setOnTouchListener((v, event) -> {
             if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
-                toogleTimeZoneModal();
+                toggleTimeZoneModal();
             }
             return true;
         });
@@ -131,7 +127,7 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    public void toogleTimeZoneModal(){
+    public void toggleTimeZoneModal(){
         View view = getLayoutInflater().inflate(R.layout.fragment_home_timezone_modal,binding.getRoot(),false);
         BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
         TextView txt = view.findViewById(R.id.timeZoneSubHeader);
@@ -170,7 +166,6 @@ public class HomeFragment extends Fragment {
         Context context = getContext();
 
         if(cb_result!=null && context !=null){
-            //nomprod
             for(int index=0;index<cb_result.length();index++){
                 try {
                     JSONObject singleElement = cb_result.getJSONObject(index);
