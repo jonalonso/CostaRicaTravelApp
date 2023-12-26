@@ -26,12 +26,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fadeScrollbars="false"
+        android:paddingTop="@dimen/modal_padding_horizontal"
         android:layout_below="@id/image_slider"
         android:layout_marginBottom="@dimen/ads_margin">
-        <RelativeLayout
+        <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
-            android:paddingTop="5dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignContent="center"
+            app:justifyContent="space_evenly">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -217,10 +220,7 @@
                     android:id="@+id/textGasStation"
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
-
-        </RelativeLayout>
-
-
+        </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 
 
