@@ -11,13 +11,12 @@
         android:name="com.jsalazar.costaricatravel.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-<!--
+
     <fragment
         android:id="@+id/nav_places"
         android:name="com.jsalazar.costaricatravel.ui.Places.PlacesFragment"
         android:label="@string/menu_places"
         tools:layout="@layout/fragment_places" />
-        -->
 
     <fragment
         android:id="@+id/nav_food"

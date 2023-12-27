@@ -18,6 +18,7 @@ public class PlacesFragment extends Fragment {
 
     private FragmentPlacesBinding binding;
 
+    @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         if (context instanceof fragmentInit) {

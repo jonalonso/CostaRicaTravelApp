@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
-                //R.id.nav_places,
+                R.id.nav_places,
                 R.id.nav_food,
                 R.id.nav_settings)
                 .setOpenableLayout(drawer)
@@ -80,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         MenuInflater inflater = getMenuInflater();
         if (lastFragment == fragmentId.FOOD) {
             inflater.inflate(R.menu.help_option_menu, this.MainMenu);
+        }else if (lastFragment == fragmentId.PLACES) {
+            inflater.inflate(R.menu.filter_option_menu, this.MainMenu);
         }
     }
 
@@ -88,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         if(item.getItemId() == R.id.help_modal){
             if(lastFragment == fragmentId.FOOD){
                 ViewDialog.showDialog(this,R.string.info_modal_food);
+            }
+        }else if(item.getItemId() == R.id.filter_modal){
+            if(lastFragment == fragmentId.PLACES){
+                ViewDialog.showDialog(this,R.string.food_1_description);
             }
         }
         return super.onOptionsItemSelected(item);

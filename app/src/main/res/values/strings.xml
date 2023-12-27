@@ -100,4 +100,5 @@
     <string name="help_menu">Help</string>
     <string name="ok" translatable="false">OK</string>
     <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
+    <string name="filter_menu">Filter</string>
 </resources>
