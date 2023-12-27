@@ -11,7 +11,7 @@
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/image_slider"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         app:iss_auto_cycle="true"
         app:iss_period="2500"
         app:iss_delay="2500"
@@ -41,10 +41,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:contentDescription="@string/timezone_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_time"/>
@@ -53,7 +53,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-                    android:textSize="18sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_1"/>
                 <TextView
@@ -62,7 +61,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-                    android:textSize="14sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_1_description"
                     app:drawableEndCompat="@drawable/ic_help"
@@ -74,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_colon"/>
                 <TextView
@@ -85,7 +83,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-                    android:textSize="18sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/home_3"/>
                 <TextView
@@ -95,7 +92,6 @@
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_3_description"
-                    android:textSize="14sp"
                     android:id="@+id/textCurrency"
                     app:drawableEndCompat="@drawable/ic_help"/>
             </LinearLayout>
@@ -105,17 +101,15 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
-                app:layout_wrapBefore="true"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_tip"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -127,7 +121,6 @@
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/tip_value"
-                    android:textSize="14sp"
                     android:id="@+id/textTip"
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
@@ -136,17 +129,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                app:layout_wrapBefore="true"
                 android:orientation="vertical"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_language"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -156,7 +149,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-                    android:textSize="14sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_4_description"
                     android:id="@+id/textLanguage"
@@ -167,18 +159,16 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
-                app:layout_wrapBefore="true"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_gas_station"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="18sp"
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                     android:text="@string/gas_station"/>
@@ -187,7 +177,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
-                    android:textSize="14sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/gas_station_value"
                     android:id="@+id/textGasStation"
@@ -197,18 +186,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                app:layout_alignSelf="center"
                 android:orientation="vertical"
-                android:paddingBottom="10dp">
+                android:paddingBottom="20dp">
                 <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_socket"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -216,7 +203,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_2_description"/>

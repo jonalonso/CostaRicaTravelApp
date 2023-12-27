@@ -57,10 +57,10 @@
     <string name="home_1">TimeZone</string>
     <string name="home_1_description">UTC-6 (CST)</string>
     <string name="home_2">Electrical Plugs</string>
-    <string name="home_2_description">110V Type A &amp; B Sockets</string>
+    <string name="home_2_description">110V Type A &amp; B Socket</string>
     <string name="home_3">Currency</string>
     <string name="home_3_description">Colon</string>
-    <string name="home_4">Main Language</string>
+    <string name="home_4">Language</string>
     <string name="home_4_description">Spanish</string>
     <string name="time_actual">Actual Time</string>
     <string name="home_slider_1">Whale Bay</string>
@@ -84,7 +84,7 @@
     <string name="tip">Tip</string>
     <string name="tip_value" translatable="false">10%</string>
     <string name="home_tip_disclaimer">10% tip fee will be charged on your restaurant bill, so it is not mandatory to any extra amount, but it is up to you.</string>
-    <string name="gas_station">Gas Station Service</string>
+    <string name="gas_station">Gas Stations</string>
     <string name="gas_station_value">" Assisted-Service"</string>
     <string name="gas_type_1" translatable="false">Super</string>
     <string name="gas_type_2" translatable="false">Regular</string>
@@ -99,5 +99,5 @@
     <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country, Also you will find a lot of Charging Stations for electric cars, and there are 3 different types of gasoline you can get in Costa Rica:"</string>
     <string name="help_menu">Help</string>
     <string name="ok" translatable="false">OK</string>
-    <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some food in Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
+    <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
 </resources>
