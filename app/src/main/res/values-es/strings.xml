@@ -84,6 +84,11 @@
     <string name="info_modal_food">Recomendamos visitar una \"Soda\" para probar comida local en Costa Rica, obtendrá los mejores precios en esos pequeños restaurantes. Los precios mostrados aquí son una estimación basada en cuanto los costarricenses que están dispuestos a pagar.</string>
     <string name="filter_menu">Filtros</string>
     <string name="remove_ads">¡Elimina la publicidad!</string>
-    <string name="remove_ads_description">Obtén la versión de pago para disfrutar de una experiencia sin publicidad.</string>
+    <string name="remove_ads_description">Obtén la versión premium para disfrutar de una experiencia sin publicidad.</string>
     <string name="remove_ads_btn">Descargar Versión Premium</string>
+    <string name="currency_icon">Icono moneda</string>
+    <string name="tip_icon">Icono propina</string>
+    <string name="language_icon">Icono lenguaje</string>
+    <string name="gas_icon">Icono gasolinera</string>
+    <string name="socket_icon">Icono Tomacorrientes</string>
 </resources>
