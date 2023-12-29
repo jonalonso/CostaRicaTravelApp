@@ -22,6 +22,8 @@ public class HttpRequestParams {
             c.add(Calendar.DAY_OF_YEAR, -2);
         }else if(dayOfWeek == 2 && hourOfDay<9){ //monday before 9am
             c.add(Calendar.DAY_OF_YEAR, -3);
+        }else if(dayOfWeek > 2 && dayOfWeek <= 6 && hourOfDay<9){ //every other weekday before 9am
+            c.add(Calendar.DAY_OF_YEAR, -1);
         }
         date = c.getTime();
         Map<String,String> response = new HashMap<>();

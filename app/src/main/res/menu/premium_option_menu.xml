@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/premium_modal"
+        android:icon="@drawable/ic_crown"
+        android:title="@string/remove_ads_btn"
+        app:showAsAction="always" />
+</menu>

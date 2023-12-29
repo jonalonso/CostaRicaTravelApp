@@ -30,7 +30,6 @@
     <string name="food_3_description">Chifrijo is a traditional dish made of rice, beans, \"Pico de gallo\" (tomato chopped mixed with species) and pork, ocaccionaly served with avocado and chips</string>
     <string name="food_4_description">A tamale is a corn-based cooked masa that is steamed in either banana leaves. Inside of the masa are fillings that  generally include rice, meat, and vegetables.</string>
     <string name="spanish_pronunciation">Spanish Pronunciation</string>
-    <string name="places_under_construction">Page under construction</string>
     <string name="food_5">Rice Pudding</string>
     <string name="food_5_description">Rice pudding is a typical dessert made by slowly cooking rice with milk and sugar. It is served hot or cold and cinnamon, vanilla or lemon peel is usually sprinkled on top to flavor it.</string>
     <string name="food_6">Picadillo de Chayote</string>
@@ -101,4 +100,7 @@
     <string name="ok" translatable="false">OK</string>
     <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
     <string name="filter_menu">Filter</string>
+    <string name="remove_ads">Remove Ads!</string>
+    <string name="remove_ads_description">Get the premium version to enjoy an ad-free experience.</string>
+    <string name="remove_ads_btn">Download Premium Version</string>
 </resources>

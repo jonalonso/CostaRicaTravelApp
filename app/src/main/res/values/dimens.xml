@@ -5,6 +5,9 @@
     <dimen name="nav_header_vertical_spacing">10dp</dimen>
     <dimen name="nav_header_height">185dp</dimen>
 
+    <!-- com.jsalazar.costaricatravelPro
+    <dimen name="ads_margin">0dp</dimen>
+    -->
     <dimen name="ads_margin">51dp</dimen>
     <dimen name="modal_padding_horizontal">8dp</dimen>
 </resources>

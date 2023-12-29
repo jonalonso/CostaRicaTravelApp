@@ -25,7 +25,6 @@
     <string name="food_3_description">El chifrijo es un plato tradicional a base de arroz, frijoles, pico de gallo (tomate picado mezclado con especies) y cerdo, servido ocasionalmente con aguacate y tortillas fritas</string>
     <string name="food_4_description">Los tamales han sido durante mucho tiempo una tradición costarricense en torno a las vacaciones de Navidad. Se componen de masa de maíz, carne, arroz y verduras.  Luego, este combo se envuelve en una hoja de plátano y se cuece al vapor. A medida que la mezcla se cocina lentamente, el sabor terroso de la hoja se filtra en la masa. Los tamales de cerdo son los más comunes, pero también los encontrarás de pollo y frijoles.</string>
     <string name="spanish_pronunciation">Pronunciación en español</string>
-    <string name="places_under_construction">Página en construcción</string>
     <string name="food_5">Arroz con leche</string>
     <string name="food_5_description">El arroz con leche es un postre típico hecho cocinando lentamente arroz con leche y azúcar. Se sirve frío o caliente y se le suele espolvorear canela, vainilla o cáscara de limón por encima para aromatizarlo</string>
     <string name="food_6">Picadillo de Chayote</string>
@@ -84,4 +83,7 @@
     <string name="help_menu">Ayuda</string>
     <string name="info_modal_food">Recomendamos visitar una \"Soda\" para probar comida local en Costa Rica, obtendrá los mejores precios en esos pequeños restaurantes. Los precios mostrados aquí son una estimación basada en cuanto los costarricenses que están dispuestos a pagar.</string>
     <string name="filter_menu">Filtros</string>
+    <string name="remove_ads">¡Elimina la publicidad!</string>
+    <string name="remove_ads_description">Obtén la versión de pago para disfrutar de una experiencia sin publicidad.</string>
+    <string name="remove_ads_btn">Descargar Versión Premium</string>
 </resources>
