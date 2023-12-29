@@ -103,4 +103,9 @@
     <string name="remove_ads">Remove Ads!</string>
     <string name="remove_ads_description">Get the premium version to enjoy an ad-free experience.</string>
     <string name="remove_ads_btn">Download Premium Version</string>
+    <string name="currency_icon">currency icon</string>
+    <string name="tip_icon">tip icon</string>
+    <string name="language_icon">Language Icon</string>
+    <string name="gas_icon">Gas Station Icon</string>
+    <string name="socket_icon">Socket icon</string>
 </resources>

@@ -76,6 +76,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/currency_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_colon"/>
                 <TextView
@@ -105,6 +106,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/tip_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_tip"/>
                 <TextView
@@ -135,6 +137,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/language_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_language"/>
                 <TextView
@@ -163,6 +166,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/gas_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_gas_station"/>
                 <TextView
@@ -191,6 +195,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/socket_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_socket"/>
                 <TextView
