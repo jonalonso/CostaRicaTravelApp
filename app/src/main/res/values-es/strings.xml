@@ -70,7 +70,7 @@
     <string name="food_16_description">" Este es un tipo de pan hecho con baguette añejo, leche, mantequilla y azúcar, algunas personas le agregan pasas, generalmente se come con leche condensada."</string>
     <string name="price_estimation">"Precio estimado: "</string>
     <string name="tip">Propinas</string>
-    <string name="home_tip_disclaimer">En Costa Rica se cobrará una tarifa 10% de propina en la factura de su restaurante, por lo que no es obligatorio dejar ningún monto adicional, pero depende de usted.</string>
+    <string name="home_tip_disclaimer">La propina es obligatoria en los restaurantes, se cobrará una tarifa de propina del 10% en la factura del restaurante, por lo que no necesita agregar ninguna cantidad adicional, pero depende de usted. Puede haber varias personas que te pidan una propina por un servicio, pero nuevamente no es obligatorio.</string>
     <string name="gas_station">Gasolinerias</string>
     <string name="gas_station_value">Servicio asistido</string>
     <string name="home_gas_station_disclaimer">Tan pronto como llegues a la gasolinera, deberás esperar a que una persona te ayude a llenar el tanque, se acepta efectivo y tarjetas de crédito en todo el país. También encontrarás muchas estaciones de carga para autos eléctricos. Hay 3 tipos diferentes de gasolina que puedes conseguir en Costa Rica:</string>
@@ -91,4 +91,6 @@
     <string name="language_icon">Icono lenguaje</string>
     <string name="gas_icon">Icono gasolinera</string>
     <string name="socket_icon">Icono Tomacorrientes</string>
+    <string name="food_17_description">Las rosquillas son hechas a base de maiz y queso, se producen principalmente en la zona de guanacaste aun pueden encontrarse en todo el país, son el acompañamiento perfecto para una tarde de café</string>
+    <string name="food_18_description">Horchata es una bebida tradicional de la región norte de Costa Rica y su textura es tipo cremosa. Es muy refrescante, un maravilloso calmante para la sed en un día caluroso.</string>
 </resources>

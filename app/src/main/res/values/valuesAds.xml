@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="banner_ads" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="banner_ads_prod" translatable="false">ca-app-pub-4157328728945876/1686561731</string>
+    <string name="banner_ads_test" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ads" translatable="false">ca-app-pub-4157328728945876/1686561731</string>
 
-    <string name="interstitial_ads" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="interstitial_ads_prod" translatable="false">NEED THIS VALUE LATER</string>
+    <string name="interstitial_ads_test" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ads" translatable="false">NEED THIS VALUE LATER</string>
 </resources>

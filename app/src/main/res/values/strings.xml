@@ -82,7 +82,7 @@
     <string name="price_estimation">"Price estimation: "</string>
     <string name="tip">Tip</string>
     <string name="tip_value" translatable="false">10%</string>
-    <string name="home_tip_disclaimer">10% tip fee will be charged on your restaurant bill, so it is not mandatory to any extra amount, but it is up to you.</string>
+    <string name="home_tip_disclaimer">Tipping is mandatory at restaurants, 10% tip fee will be charged on your restaurant bill, so you dont need to add any extra amount, but it is up to you. There could be several people that might ask you for a tip for a service but again it is not mandatory</string>
     <string name="gas_station">Gas Stations</string>
     <string name="gas_station_value">" Assisted-Service"</string>
     <string name="gas_type_1" translatable="false">Super</string>
@@ -108,4 +108,8 @@
     <string name="language_icon">Language Icon</string>
     <string name="gas_icon">Gas Station Icon</string>
     <string name="socket_icon">Socket icon</string>
+    <string name="food_17" translatable="false">Rosquillas</string>
+    <string name="food_17_description">These little cheese “rosquillas” literally translate to donut in English, but don’t be confused. Found all over Central America, these hard little cookies are the perfect accompaniment to afternoon coffee.  You can make the rosquillas either sweet or salty depending on your tastes.</string>
+    <string name="food_18" translatable="false">Horchata</string>
+    <string name="food_18_description">Horchata is a traditional beverage of the northern region of Costa Rica and its sort of creamy texture, It’s very refreshing, a wonderful thirst quencher on a hot day.</string>
 </resources>
