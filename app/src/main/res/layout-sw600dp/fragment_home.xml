@@ -34,9 +34,9 @@
             android:layout_height="wrap_content"
             app:flexWrap="wrap"
             app:alignContent="center"
-            app:justifyContent="space_around">
+            app:justifyContent="space_evenly">
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
@@ -68,7 +68,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
@@ -98,7 +98,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
@@ -128,7 +128,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 app:layout_wrapBefore="true"
@@ -158,7 +158,7 @@
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
@@ -187,7 +187,7 @@
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical"
@@ -211,6 +211,38 @@
                     android:textColor="@color/nav_bar"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
                     android:text="@string/home_2_description"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                app:layout_wrapBefore="true"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="@string/driving_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_driving"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="@string/driving"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    android:textSize="14sp"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:text="@string/driving_value"
+                    android:id="@+id/textDriving"
+                    app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
         </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>

@@ -61,7 +61,7 @@
     <string name="home_slider_8">Museo de los niños</string>
     <string name="home_slider_9">Parque Zarcero</string>
     <string name="home_slider_10">Sanatorio Duran</string>
-    <string name="home_currency_disclaimer">La mayoría de los lugares en Costa Rica aceptan tarjetas de crédito (especialmente Visa o MasterCard), el efectivo se puede usar en transporte público, souvenirs o para comprar comida callejera. Algunos lugares pueden aceptar dólares en efectivo a un tipo de cambio más bajo, así que evite pagar de más y trate de conseguir colones en el aeropuerto o en cualquier ATM del país.</string>
+    <string name="home_currency_disclaimer">La mayoría de los lugares en Costa Rica aceptan tarjetas de crédito (especialmente Visa o MasterCard), el efectivo se puede usar en transporte público, souvenirs o para comprar comida callejera. Algunos lugares pueden aceptar dólares en efectivo a un tipo de cambio más bajo, así que evite pagar de más y trate de conseguir colones en algún banco local o en cualquier ATM del país.</string>
     <string name="number_validation">Número muy grande, porfavor utiliza un valor mas pequeño</string>
     <string name="country_flag">Bandera del país</string>
     <string name="home_language_disclaimer">El idioma nacional oficial de Costa Rica es el español, sin embargo el idioma inglés, así como el portugués y muchos otros idiomas, también son hablados por un porcentaje de la población.</string>
@@ -93,4 +93,7 @@
     <string name="socket_icon">Icono Tomacorrientes</string>
     <string name="food_17_description">Las rosquillas son hechas a base de maiz y queso, se producen principalmente en la zona de guanacaste aun pueden encontrarse en todo el país, son el acompañamiento perfecto para una tarde de café</string>
     <string name="food_18_description">Horchata es una bebida tradicional de la región norte de Costa Rica y su textura es tipo cremosa. Es muy refrescante, un maravilloso calmante para la sed en un día caluroso.</string>
+    <string name="driving_icon">Conduciendo en Costa Rica</string>
+    <string name="driving">Conduciendo</string>
+    <string name="home_driving_disclaimer">Conducir en Costa Rica puede ser un desafío, especialmente de noche, en muchos lugares sin señalización vial o sin aceras, por lo que puedes encontrar gente caminando por la calle. Realmente recomiendo usar una aplicación llamada \"Waze\" para la navegación en automóvil. Google Maps puede ayudarlo a buscar lugares cerca de su área, pero no es una buena opción para conducir aquí.</string>
 </resources>

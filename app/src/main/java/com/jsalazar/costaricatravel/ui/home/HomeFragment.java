@@ -122,6 +122,13 @@ public class HomeFragment extends Fragment {
             return true;
         });
 
+        binding.textDriving.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.home_driving_disclaimer);
+            }
+            return true;
+        });
+
 
         AdsController.displayBanner(binding.adView);
         return root;

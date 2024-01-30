@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
-        List<String> testDeviceIds = Arrays.asList("beeae8b9-85d2-4b6f-807f-b4c3e540dc6a","a0135c0b-dbd5-4269-aa9d-f94dd55705fd");
+        List<String> testDeviceIds = Arrays.asList("beeae8b9-85d2-4b6f-807f-b4c3e540dc6a","a0135c0b-dbd5-4269-aa9d-f94dd55705fd","00000000-0000-0000-0000-000000000000");
         RequestConfiguration configuration =
                 new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
         MobileAds.setRequestConfiguration(configuration);
