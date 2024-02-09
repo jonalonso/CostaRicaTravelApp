@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.jsalazar.costaricatravel.ui.home.HomeFragment"
+        android:name="com.jsalazar.costaricatravel.ui.Home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,8 +19,14 @@
         tools:layout="@layout/fragment_places" />
 
     <fragment
+        android:id="@+id/nav_bus"
+        android:name="com.jsalazar.costaricatravel.ui.Bus.BusFragment"
+        android:label="@string/menu_bus"
+        tools:layout="@layout/fragment_bus" />
+
+    <fragment
         android:id="@+id/nav_food"
-        android:name="com.jsalazar.costaricatravel.ui.food.FoodFragment"
+        android:name="com.jsalazar.costaricatravel.ui.Food.FoodFragment"
         android:label="@string/menu_food"
         tools:layout="@layout/fragment_food" />
 

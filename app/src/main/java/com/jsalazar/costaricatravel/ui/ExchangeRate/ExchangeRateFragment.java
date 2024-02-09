@@ -40,7 +40,7 @@ public class ExchangeRateFragment extends Fragment {
 
     private final ArrayList<Currency> currencyArray = new ArrayList<>();
 
-    private final int TOTAL_CURRENCIES = 15;
+    private final int TOTAL_CURRENCIES = ExchangeRateIndicator.values().length;
     private final int MAX_PROGRESS = 100;
     ProgressBar progress = null;
 

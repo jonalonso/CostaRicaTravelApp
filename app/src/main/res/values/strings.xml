@@ -112,8 +112,17 @@
     <string name="food_17_description">These little cheese “rosquillas” literally translate to donut in English, but don’t be confused. Found all over Central America, these hard little cookies are the perfect accompaniment to afternoon coffee.  You can make the rosquillas either sweet or salty depending on your tastes.</string>
     <string name="food_18" translatable="false">Horchata</string>
     <string name="food_18_description">Horchata is a traditional beverage of the northern region of Costa Rica and its sort of creamy texture, It’s very refreshing, a wonderful thirst quencher on a hot day.</string>
-    <string name="driving_icon">Drivering in Costa Rica</string>
+    <string name="driving_icon">Driving in Costa Rica</string>
     <string name="driving">Driving</string>
     <string name="driving_value" translatable="false"> </string>
     <string name="home_driving_disclaimer">Driving in Costa Rica can be a challenge specially at night a lot of places without road marking or without sidewalks so you can find people walking on the street. I really recommend to use an app called \"Waze\" for driving navigation, Google Maps can help you to look for places near your area, but not a good option for driving here.</string>
+    <string name="menu_bus">Bus Routes</string>
+    <string name="bus_main_label">In Costa Rica you are going to find a bus stop on every single town, you can save a lot of money by using this mean of transportation, on San José, Heredia, Cartago and Alajuela you could use the train as well</string>
+    <string name="currency_canada">%1$.2f Canadian dollar CAD</string>
+    <string name="info_modal_bus">A bus will be the cheaper mean of transportation, cash is the main payment method accepted on buses, fares depends on the distance could be between 400CRC up to 9000CRC, if you still want to hire a private shuffle my suggestion will be to use uber to make sure you are getting a good price</string>
+    <string name="sim_icon">SIM in Costa Rica</string>
+    <string name="sim">SIM Cards</string>
+    <string name="home_sim_disclaimer">There are 3 companies which provide this service Kolbi (this is the local one), Claro and Liberty. You can get a SIM card there use google maps to identify the nearest stores to your area. You can also buy a pre-paid SIM card on almost every supermarket. Using eSIMs or a roaming service from your local provider is also a option here.</string>
+    <string name="map_icon">map icon</string>
+    <string name="navigation_icon">Navigation Icon</string>
 </resources>

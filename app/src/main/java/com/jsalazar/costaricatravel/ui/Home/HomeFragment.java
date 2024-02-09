@@ -1,4 +1,4 @@
-package com.jsalazar.costaricatravel.ui.home;
+package com.jsalazar.costaricatravel.ui.Home;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -125,6 +125,13 @@ public class HomeFragment extends Fragment {
         binding.textDriving.setOnTouchListener((v, event) -> {
             if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
                 toogleOtherModal(R.string.home_driving_disclaimer);
+            }
+            return true;
+        });
+
+        binding.textSim.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.home_sim_disclaimer);
             }
             return true;
         });

@@ -7,7 +7,7 @@ public enum ExchangeRateIndicator {
     Euro("333","USD",R.string.currency_eur, R.drawable.european_union),
     LibraEsterlina("330","USD",R.string.currency_pound,R.drawable.united_kingdom),
     PesoMex("332","CRC",R.string.currency_mx,R.drawable.mexican_flag),
-    Cordoba("340","CRC",R.string.currency_cor,R.drawable.nicaragua_flag),
+    DolarCanadiense("328","CRC",R.string.currency_canada,R.drawable.canada_flag),
     RealBrasilero("346","CRC",R.string.currency_br,R.drawable.brazil_flag),
     PesoColombiano("345","CRC",R.string.currency_cop,R.drawable.colombia_flag),
     SolPeruano("3057","CRC",R.string.currency_pen, R.drawable.peru_flag),
@@ -17,7 +17,8 @@ public enum ExchangeRateIndicator {
     Won("337","CRC",R.string.currency_south_korea,R.drawable.south_korea_flag),
     Argentina("344","CRC",R.string.currency_argentina,R.drawable.argentina_flag),
     Dinamarca("342","CRC",R.string.currency_denmark,R.drawable.denmark_flag),
-    Thailandia("21262","CRC",R.string.currency_thailand,R.drawable.thailand_flag);
+    Thailandia("21262","CRC",R.string.currency_thailand,R.drawable.thailand_flag),
+    Cordoba("340","CRC",R.string.currency_cor,R.drawable.nicaragua_flag);
 
     private final String value;
     private final String conversion;

@@ -8,7 +8,7 @@
     <string name="menu_home">Inicio</string>
     <string name="menu_places">Lugares destacados</string>
     <string name="menu_exchange_rate">Tipo de Cambio</string>
-    <string name="currency_dolar">%1$.2f Dolar USD</string>
+    <string name="currency_dolar">%1$.2f Dólar USD</string>
     <string name="currency_pound">%1$.2f Libra GBP</string>
     <string name="currency_mx">%1$.2f Peso Mexicano MXN</string>
     <string name="currency_cop">%1$.2f Peso Colombiano COP</string>
@@ -96,4 +96,13 @@
     <string name="driving_icon">Conduciendo en Costa Rica</string>
     <string name="driving">Conduciendo</string>
     <string name="home_driving_disclaimer">Conducir en Costa Rica puede ser un desafío, especialmente de noche, en muchos lugares sin señalización vial o sin aceras, por lo que puedes encontrar gente caminando por la calle. Realmente recomiendo usar una aplicación llamada \"Waze\" para la navegación en automóvil. Google Maps puede ayudarlo a buscar lugares cerca de su área, pero no es una buena opción para conducir aquí.</string>
+    <string name="menu_bus">Rutas de autobús</string>
+    <string name="bus_main_label">En Costa Rica vas a encontrar una parada de autobús en cada pueblo, puedes ahorrar mucho dinero usando este medio de transporte, en San José, Heredia, Cartago y Alajuela también puedes usar el tren.</string>
+    <string name="currency_canada">%1$.2f Dólar Canadiense CAD</string>
+    <string name="info_modal_bus">Un autobús será el medio de transporte más barato, el efectivo es el principal método de pago aceptado en los autobuses, las tarifas dependen de la distancia y pueden oscilar entre 400 CRC y 9000 CRC. Si aún quieres contratar un servicio privado, mi sugerencia será usar uber para estar seguro que te ofrecen un buen precio</string>
+    <string name="sim_icon">SIM en Costa Rica</string>
+    <string name="sim">Tarjetas SIM</string>
+    <string name="home_sim_disclaimer">Hay 3 empresas que brindan este servicio: Kolbi (esta es la compañía local), Claro y Liberty. Puedes obtener una tarjeta SIM allí. Utiliza Google Maps para identificar las tiendas más cercanas a tu área. También puedes comprar una tarjeta SIM prepago en casi todos los supermercados. Usar eSIM o un servicio de roaming de su proveedor local también es una opción aquí.</string>
+    <string name="map_icon">icono de un mapa</string>
+    <string name="navigation_icon">Icono de navegación</string>
 </resources>

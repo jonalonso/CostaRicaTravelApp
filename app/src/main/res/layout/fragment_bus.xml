@@ -9,18 +9,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jsalazar.costaricatravel.ui.Food.FoodFragment">
     <TextView
-        android:id="@+id/TextFood"
+        android:id="@+id/TextBus"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
         android:textColor="@color/nav_bar"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="@string/food_main_label"/>
+        android:text="@string/bus_main_label"/>
 
     <ListView
-        android:id="@+id/listFood"
-        android:layout_below="@+id/TextFood"
+        android:id="@+id/listBus"
+        android:layout_below="@+id/TextBus"
         android:layout_width="match_parent"
         android:listSelector="@android:color/transparent"
         android:paddingBottom="@dimen/ads_margin"

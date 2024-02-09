@@ -1,4 +1,4 @@
-package com.jsalazar.costaricatravel.ui.food;
+package com.jsalazar.costaricatravel.ui.Food;
 
 import android.content.Context;
 import android.os.Bundle;

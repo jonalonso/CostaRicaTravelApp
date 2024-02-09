@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_route"
+        android:contentDescription="@string/map_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+       />
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:textColor="@color/nav_bar"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/icono"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/firstPlace"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icono"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/originPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:textColor="@color/nav_bar"
+            android:layout_centerVertical="true"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/googleMapsIcon1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/navigation_icon"
+            android:src="@drawable/ic_maps"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icono"
+        android:layout_below="@id/firstPlace"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/destinationPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:textColor="@color/nav_bar"
+            android:layout_centerVertical="true"
+            tools:ignore="RelativeOverlap"/>
+
+        <ImageView
+            android:id="@+id/googleMapsIcon2"
+            android:layout_width="35dp"
+            android:contentDescription="@string/navigation_icon"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_maps"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

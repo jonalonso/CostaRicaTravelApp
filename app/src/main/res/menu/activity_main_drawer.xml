@@ -16,6 +16,10 @@
             android:title="@string/menu_places" />
             -->
         <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/ic_bus"
+            android:title="@string/menu_bus" />
+        <item
             android:id="@+id/nav_food"
             android:icon="@drawable/ic_menu_food"
             android:title="@string/menu_food" />
