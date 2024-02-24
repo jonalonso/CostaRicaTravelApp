@@ -5,7 +5,7 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_places">Highlights places</string>
+    <string name="menu_places">National Parks</string>
     <string name="menu_exchange_rate">Exchange Rate</string>
     <string name="menu_food">Traditional Food</string>
     <string name="currency_dolar">%1$.2f Dollar USD</string>
@@ -82,7 +82,7 @@
     <string name="price_estimation">"Price estimation: "</string>
     <string name="tip">Tip</string>
     <string name="tip_value" translatable="false">10%</string>
-    <string name="home_tip_disclaimer">Tipping is mandatory at restaurants, 10% tip fee will be charged on your restaurant bill, so you dont need to add any extra amount, but it is up to you. There could be several people that might ask you for a tip for a service but again it is not mandatory</string>
+    <string name="home_tip_disclaimer">Tipping is mandatory at restaurants, 10% tip fee will be charged on your restaurant bill, so you dont need to add any extra amount, but it is up to you. There could be several people that might ask you for a tip for a service (please keep in mind that the minimum monthly payment in Costa Rica is around CRC 360000 if you still want to tip, you can use this as reference) but again it is not mandatory</string>
     <string name="gas_station">Gas Stations</string>
     <string name="gas_station_value">" Assisted-Service"</string>
     <string name="gas_type_1" translatable="false">Super</string>
@@ -125,4 +125,5 @@
     <string name="home_sim_disclaimer">There are 3 companies which provide this service Kolbi (this is the local one), Claro and Liberty. You can get a SIM card there use google maps to identify the nearest stores to your area. You can also buy a pre-paid SIM card on almost every supermarket. Using eSIMs or a roaming service from your local provider is also a option here.</string>
     <string name="map_icon">map icon</string>
     <string name="navigation_icon">Navigation Icon</string>
+    <string name="close_modal">Close modal</string>
 </resources>

@@ -6,7 +6,7 @@
     <string name="nav_header_desc">Encabezado</string>
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_places">Lugares destacados</string>
+    <string name="menu_places">Parques nacionales</string>
     <string name="menu_exchange_rate">Tipo de Cambio</string>
     <string name="currency_dolar">%1$.2f Dólar USD</string>
     <string name="currency_pound">%1$.2f Libra GBP</string>
@@ -70,7 +70,7 @@
     <string name="food_16_description">" Este es un tipo de pan hecho con baguette añejo, leche, mantequilla y azúcar, algunas personas le agregan pasas, generalmente se come con leche condensada."</string>
     <string name="price_estimation">"Precio estimado: "</string>
     <string name="tip">Propinas</string>
-    <string name="home_tip_disclaimer">La propina es obligatoria en los restaurantes, se cobrará una tarifa de propina del 10% en la factura del restaurante, por lo que no necesita agregar ninguna cantidad adicional, pero depende de usted. Puede haber varias personas que te pidan una propina por un servicio, pero nuevamente no es obligatorio.</string>
+    <string name="home_tip_disclaimer">La propina es obligatoria en los restaurantes, se cobrará una tarifa de propina del 10% su factura, por lo que no necesita agregar ninguna cantidad adicional, pero depende de usted. Puede haber varias personas que te pidan una propina por un servicio (ten en cuenta que el pago mínimo mensual en Costa Rica es de alrededor de CRC 360000, si aún desea dar propina, puede usar esto como referencia), pero nuevamente no es obligatorio.</string>
     <string name="gas_station">Gasolinerias</string>
     <string name="gas_station_value">Servicio asistido</string>
     <string name="home_gas_station_disclaimer">Tan pronto como llegues a la gasolinera, deberás esperar a que una persona te ayude a llenar el tanque, se acepta efectivo y tarjetas de crédito en todo el país. También encontrarás muchas estaciones de carga para autos eléctricos. Hay 3 tipos diferentes de gasolina que puedes conseguir en Costa Rica:</string>
@@ -105,4 +105,5 @@
     <string name="home_sim_disclaimer">Hay 3 empresas que brindan este servicio: Kolbi (esta es la compañía local), Claro y Liberty. Puedes obtener una tarjeta SIM allí. Utiliza Google Maps para identificar las tiendas más cercanas a tu área. También puedes comprar una tarjeta SIM prepago en casi todos los supermercados. Usar eSIM o un servicio de roaming de su proveedor local también es una opción aquí.</string>
     <string name="map_icon">icono de un mapa</string>
     <string name="navigation_icon">Icono de navegación</string>
+    <string name="close_modal">Cerrar</string>
 </resources>
