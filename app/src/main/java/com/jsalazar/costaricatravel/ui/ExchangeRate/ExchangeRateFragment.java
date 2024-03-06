@@ -25,7 +25,6 @@ import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentExchangeRateBinding;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 import com.jsalazar.costaricatravel.models.Currency;
-import com.jsalazar.costaricatravel.utils.AdsController;
 import com.jsalazar.costaricatravel.utils.BackgroundTask;
 import com.jsalazar.costaricatravel.utils.HttpRequest;
 import com.jsalazar.costaricatravel.utils.HttpRequestParams;
@@ -147,7 +146,10 @@ public class ExchangeRateFragment extends Fragment {
             }
         }.execute();
 
-        AdsController.displayBanner(binding.adView);
+        if (this.getContext() instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) this.getContext();
+            mListener.setBannerAdView(binding.adView);
+        }
         return root;
     }
 

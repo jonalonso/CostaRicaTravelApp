@@ -16,7 +16,6 @@ import com.jsalazar.costaricatravel.databinding.FragmentBusBinding;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 import com.jsalazar.costaricatravel.itemGenerator.busGenerator;
 import com.jsalazar.costaricatravel.models.Bus;
-import com.jsalazar.costaricatravel.utils.AdsController;
 
 import java.util.ArrayList;
 
@@ -27,8 +26,6 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class BusFragment extends Fragment {
-
-    private busAdapter adapter = null;
 
 
     @Override
@@ -53,10 +50,13 @@ public class BusFragment extends Fragment {
 
         ListView list= binding.listBus;
         ArrayList<Bus> busArray = busGenerator.generate();
-        adapter=new busAdapter(this.getActivity(), busArray);
+        busAdapter adapter = new busAdapter(this.getActivity(), busArray);
         list.setAdapter(adapter);
 
-        AdsController.displayBanner(binding.adView);
+        if (this.getContext() instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) this.getContext();
+            mListener.setBannerAdView(binding.adView);
+        }
         return root;
     }
 }

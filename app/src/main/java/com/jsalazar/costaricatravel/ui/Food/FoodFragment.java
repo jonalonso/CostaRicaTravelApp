@@ -17,7 +17,6 @@ import com.jsalazar.costaricatravel.databinding.FragmentFoodBinding;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
 import com.jsalazar.costaricatravel.itemGenerator.foodGenerator;
 import com.jsalazar.costaricatravel.models.FoodRow;
-import com.jsalazar.costaricatravel.utils.AdsController;
 
 import java.util.ArrayList;
 
@@ -57,7 +56,10 @@ public class FoodFragment extends Fragment {
         adapter=new foodAdapter(this.getActivity(), foodArray);
         list.setAdapter(adapter);
 
-        AdsController.displayBanner(binding.adView);
+        if (this.getContext() instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) this.getContext();
+            mListener.setBannerAdView(binding.adView);
+        }
         return root;
     }
 

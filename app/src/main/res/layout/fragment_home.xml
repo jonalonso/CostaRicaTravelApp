@@ -236,6 +236,69 @@
                 <ImageView
                     android:layout_width="46dp"
                     android:layout_height="46dp"
+                    android:contentDescription="@string/climate"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_climate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="@string/climate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    android:textSize="14sp"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:text="@string/climate_text"
+                    android:id="@+id/textClimate"
+                    app:drawableEndCompat="@drawable/ic_help" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="@string/holidays"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_holiday"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="@string/holidays"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    android:textSize="14sp"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:text="@string/holidays_value"
+                    android:id="@+id/textHoliday"
+                    app:drawableEndCompat="@drawable/ic_help" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                app:layout_wrapBefore="true"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
                     android:contentDescription="@string/driving_icon"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_driving"/>
@@ -285,7 +348,7 @@
                     android:textColor="@color/nav_bar"
                     android:textSize="14sp"
                     style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
-                    android:text="@string/driving_value"
+                    android:text="@string/sim_value"
                     android:id="@+id/textSim"
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>

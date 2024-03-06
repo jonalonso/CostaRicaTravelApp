@@ -82,7 +82,7 @@
     <string name="price_estimation">"Price estimation: "</string>
     <string name="tip">Tip</string>
     <string name="tip_value" translatable="false">10%</string>
-    <string name="home_tip_disclaimer">Tipping is mandatory at restaurants, 10% tip fee will be charged on your restaurant bill, so you dont need to add any extra amount, but it is up to you. There could be several people that might ask you for a tip for a service (please keep in mind that the minimum monthly payment in Costa Rica is around CRC 360000 if you still want to tip, you can use this as reference) but again it is not mandatory</string>
+    <string name="home_tip_disclaimer">Tipping is mandatory at restaurants, 10% tip fee will be charged on your restaurant bill, so you dont need to add any extra amount, but it is up to you. There could be several people that might ask you for a tip for a service (please keep in mind that the minimum monthly wage in Costa Rica is around CRC 360000 if you still want to tip, you can use this as reference) but again it is not mandatory</string>
     <string name="gas_station">Gas Stations</string>
     <string name="gas_station_value">" Assisted-Service"</string>
     <string name="gas_type_1" translatable="false">Super</string>
@@ -98,7 +98,7 @@
     <string name="home_gas_station_disclaimer">" As soon as you get to the gas station, you need to wait for a person to help you out to fill up the tank, cash and credit cards are accepted all over the country, Also you will find a lot of Charging Stations for electric cars, and there are 3 different types of gasoline you can get in Costa Rica:"</string>
     <string name="help_menu">Help</string>
     <string name="ok" translatable="false">OK</string>
-    <string name="info_modal_food">We highly recommend to visit a \"Soda\" to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
+    <string name="info_modal_food">We highly recommend to visit a \"Soda\" (a small local restaurant) to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
     <string name="filter_menu">Filter</string>
     <string name="remove_ads">Remove Ads!</string>
     <string name="remove_ads_description">Get the premium version to enjoy an ad-free experience.</string>
@@ -114,7 +114,7 @@
     <string name="food_18_description">Horchata is a traditional beverage of the northern region of Costa Rica and its sort of creamy texture, It’s very refreshing, a wonderful thirst quencher on a hot day.</string>
     <string name="driving_icon">Driving in Costa Rica</string>
     <string name="driving">Driving</string>
-    <string name="driving_value" translatable="false"> </string>
+    <string name="driving_value">" Warning"</string>
     <string name="home_driving_disclaimer">Driving in Costa Rica can be a challenge specially at night a lot of places without road marking or without sidewalks so you can find people walking on the street. I really recommend to use an app called \"Waze\" for driving navigation, Google Maps can help you to look for places near your area, but not a good option for driving here.</string>
     <string name="menu_bus">Bus Routes</string>
     <string name="bus_main_label">In Costa Rica you are going to find a bus stop on every single town, you can save a lot of money by using this mean of transportation, on San José, Heredia, Cartago and Alajuela you could use the train as well</string>
@@ -126,4 +126,11 @@
     <string name="map_icon">map icon</string>
     <string name="navigation_icon">Navigation Icon</string>
     <string name="close_modal">Close modal</string>
+    <string name="climate">Weather</string>
+    <string name="climate_text">Two Seasons</string>
+    <string name="climate_disclaimer">Costa Rica’s two\\nseasons are the dry (summer) – from January through April and rainy (winter)  from May through December. Temperature in Costa Rica might vary between 16 ° to 36° Celsius. The nearest you are staying to the coast, the highest the temperature will be.</string>
+    <string name="holidays">Holidays</string>
+    <string name="sim_value">3 Providers</string>
+    <string name="holidays_value">12 Days By Year</string>
+    <string name="holidays_disclaimer">Costa Rica has 12 holidays by year. Some turistic places might increase their prices if there is a holiday coming. Keep these dates on mind while planning your trip. \\n\\n:\\nJanuary 1st\\nApril 15th\\nMarch 28th\\nMarch 29th\\nMay 1st\\nJuly 29th\\nAugust 2nd\\nAugust 15th\\nAugust 31st\\nSeptember 15th\\nDecember 1st\\nDecember 25th</string>
 </resources>

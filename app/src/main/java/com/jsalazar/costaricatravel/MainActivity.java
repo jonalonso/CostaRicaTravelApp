@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.material.navigation.NavigationView;
@@ -30,9 +32,11 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity implements fragmentInit {
+public class MainActivity extends AppCompatActivity implements fragmentInit{
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    private AdView actualBanner;
 
     private Menu MainMenu;
     private fragmentId lastFragment;
@@ -47,6 +51,33 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         setSupportActionBar(binding.appBarMain.toolbar);
 
         DrawerLayout drawer = binding.drawerLayout;
+        drawer.addDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+                if(MainActivity.this.actualBanner!=null){
+                    MainActivity.this.actualBanner.destroy();
+                    MainActivity.this.actualBanner.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+                if(MainActivity.this.actualBanner!=null){
+                    AdsController.displayBanner(MainActivity.this.actualBanner);
+                    MainActivity.this.actualBanner.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
@@ -104,8 +135,12 @@ public class MainActivity extends AppCompatActivity implements fragmentInit {
         }
 
         AdsController.displayInterstitial(this);
+    }
 
-
+    @Override
+    public void setBannerAdView(AdView view) {
+        this.actualBanner = view;
+        AdsController.displayBanner(this.actualBanner);
     }
 
     @Override

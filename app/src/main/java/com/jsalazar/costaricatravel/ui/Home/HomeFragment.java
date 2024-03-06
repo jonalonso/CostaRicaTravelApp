@@ -19,7 +19,6 @@ import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentHomeBinding;
 import com.jsalazar.costaricatravel.interfaces.JsonArrayCallback;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
-import com.jsalazar.costaricatravel.utils.AdsController;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.jsalazar.costaricatravel.utils.BackgroundTask;
 import com.jsalazar.costaricatravel.utils.DrawableTextViewTouched;
@@ -31,9 +30,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Objects;
 import java.util.TimeZone;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
     private FragmentHomeBinding binding;
 
     private JSONArray cb_result;
@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment {
         if (this.getContext() instanceof fragmentInit) {
             fragmentInit mListener = (fragmentInit) this.getContext();
             mListener.onFragmentInteraction(fragmentId.HOME);
+            mListener.setBannerAdView(binding.adView);
         }
         final int MAX_SLIDER_ELEMENTS = 5;
         View root = binding.getRoot();
@@ -136,8 +137,18 @@ public class HomeFragment extends Fragment {
             return true;
         });
 
-
-        AdsController.displayBanner(binding.adView);
+        binding.textClimate.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.climate_disclaimer);
+            }
+            return true;
+        });
+        binding.textHoliday.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleOtherModal(R.string.holidays_disclaimer);
+            }
+            return true;
+        });
         return root;
     }
 
@@ -163,9 +174,12 @@ public class HomeFragment extends Fragment {
 
     public void toogleOtherModal(int text){
         View view = getLayoutInflater().inflate(R.layout.fragment_home_default_modal,binding.getRoot(),false);
+        String textToDisplay = getResources().getString(text);
+
+
         BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
         TextView txt = view.findViewById(R.id.homePageDefaultModalText);
-        txt.setText(text);
+        txt.setText(textToDisplay.replace("\\n", Objects.requireNonNull(System.getProperty("line.separator"))));
         dialog.setContentView(view);
         dialog.show();
     }
@@ -210,4 +224,5 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }
