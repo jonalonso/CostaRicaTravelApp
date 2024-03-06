@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentPlacesBinding;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
-import com.jsalazar.costaricatravel.utils.AdsController;
 
 public class PlacesFragment extends Fragment {
 
@@ -32,9 +31,10 @@ public class PlacesFragment extends Fragment {
 
         binding = FragmentPlacesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-
-        AdsController.displayBanner(binding.adView);
+        if (this.getContext() instanceof fragmentInit) {
+            fragmentInit mListener = (fragmentInit) this.getContext();
+            mListener.setBannerAdView(binding.adView);
+        }
         return root;
     }
 
