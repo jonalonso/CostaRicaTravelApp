@@ -3,6 +3,7 @@ package com.jsalazar.costaricatravel.utils;
 import static com.jsalazar.costaricatravel.constants.adsValues.ADS_PERCENTAGE;
 
 import android.app.Activity;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 
@@ -20,6 +21,12 @@ public class AdsController {
     public static void displayBanner(AdView mAdView){
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mAdView.setVisibility(View.VISIBLE);
+    }
+
+    public static void destroyBanner(AdView mAdView){
+        mAdView.destroy();
+        mAdView.setVisibility(View.GONE);
     }
 
     public static void displayInterstitial(Activity context){

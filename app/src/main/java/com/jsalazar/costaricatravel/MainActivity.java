@@ -60,8 +60,7 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
             @Override
             public void onDrawerOpened(@NonNull View drawerView) {
                 if(MainActivity.this.actualBanner!=null){
-                    MainActivity.this.actualBanner.destroy();
-                    MainActivity.this.actualBanner.setVisibility(View.GONE);
+                    AdsController.destroyBanner(MainActivity.this.actualBanner);
                 }
             }
 
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
             public void onDrawerClosed(@NonNull View drawerView) {
                 if(MainActivity.this.actualBanner!=null){
                     AdsController.displayBanner(MainActivity.this.actualBanner);
-                    MainActivity.this.actualBanner.setVisibility(View.VISIBLE);
                 }
             }
 
