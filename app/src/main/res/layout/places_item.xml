@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlacesName"
+        android:text="este es el nombre de un parque"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/nav_bar"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/PlacesPrices"
+        android:layout_below="@+id/PlacesName"
+        app:flexWrap="wrap"
+        app:alignContent="center"
+        app:justifyContent="space_between">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daypass Up to 5.65USD"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            app:drawableStartCompat="@drawable/ic_dollar"
+            android:textColor="@color/nav_bar"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downloadInfo"
+            android:contentDescription="@string/downloadIcon"
+            android:src="@drawable/ic_download"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/PlacesPrices"
+        app:flexWrap="wrap"
+        app:alignContent="center"
+        app:justifyContent="space_between">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:textColor="@color/nav_bar"
+            android:text="8:00AM - 4:00PM"
+            app:drawableStartCompat="@drawable/ic_clock"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/openLocation"
+            android:contentDescription="@string/locationIcon"
+            android:src="@drawable/ic_location"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/onlineIcon"
+            android:id="@+id/onlineReservation"
+            android:src="@drawable/ic_online_payment"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+</RelativeLayout>

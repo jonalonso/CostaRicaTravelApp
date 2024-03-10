@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
         if (lastFragment == fragmentId.FOOD || lastFragment == fragmentId.BUS) {
             inflater.inflate(R.menu.help_option_menu, this.MainMenu);
         }else if (lastFragment == fragmentId.PLACES) {
-            inflater.inflate(R.menu.filter_option_menu, this.MainMenu);
+            this.MainMenu = null;
         } else if (lastFragment == fragmentId.HOME && !PREMIUM_APP) {
             inflater.inflate(R.menu.premium_option_menu, this.MainMenu);
         }

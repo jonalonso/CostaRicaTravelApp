@@ -133,4 +133,7 @@
     <string name="sim_value">3 Providers</string>
     <string name="holidays_value">12 Days By Year</string>
     <string name="holidays_disclaimer">Costa Rica has 12 holidays by year. Some turistic places might increase their prices if there is a holiday coming. Keep these dates on mind while planning your trip. \\n\\n:\\nJanuary 1st\\nApril 15th\\nMarch 28th\\nMarch 29th\\nMay 1st\\nJuly 29th\\nAugust 2nd\\nAugust 15th\\nAugust 31st\\nSeptember 15th\\nDecember 1st\\nDecember 25th</string>
+    <string name="downloadIcon">Download Park Info</string>
+    <string name="locationIcon">Open park location</string>
+    <string name="onlineIcon">Open Online Purchase</string>
 </resources>

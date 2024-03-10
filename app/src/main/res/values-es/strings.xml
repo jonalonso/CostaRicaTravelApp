@@ -114,4 +114,7 @@
     <string name="sim_value">3 Compañias</string>
     <string name="holidays_value">12 Días al año</string>
     <string name="holidays_disclaimer">" Costa Rica tiene 12 días festivos al año. Algunos lugares turísticos pueden aumentar sus precios si se acerca un día festivo. Tenga en cuenta estas fechas al planificar su viaje. \\n\\n:\\n1 de enero\\n15 de abril\\n28 de marzo\\n29 de marzo\\n1 de mayo\\n29 de julio\\n2 de agosto\\n15 de agosto\\n31 de agosto\\n15 de septiembre\\n1 de diciembre\\n25 de diciembre"</string>
+    <string name="downloadIcon">Descargar información del parque</string>
+    <string name="locationIcon">Abrir ubicación del parque</string>
+    <string name="onlineIcon">Abrir compra en línea</string>
 </resources>
