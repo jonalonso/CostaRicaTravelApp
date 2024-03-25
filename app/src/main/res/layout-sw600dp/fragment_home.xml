@@ -17,7 +17,7 @@
         app:iss_delay="2500"
         android:background="@android:color/transparent"
         app:iss_error_image="@drawable/ic_errorimg"
-        app:iss_placeholder="@drawable/ic_loading"
+        app:iss_placeholder="@mipmap/ic_launcher"
         app:iss_selected_dot="@drawable/ic_circle_selected"
         app:iss_unselected_dot="@drawable/ic_circle"
         app:iss_text_align="CENTER"/>

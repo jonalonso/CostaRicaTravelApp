@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/modal_padding_horizontal">
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider_place"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="2500"
+        app:iss_delay="2500"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:iss_error_image="@drawable/ic_errorimg"
+        app:iss_placeholder="@mipmap/ic_launcher"
+        app:iss_selected_dot="@drawable/ic_circle_selected"
+        app:iss_unselected_dot="@drawable/ic_circle"
+        android:layout_centerHorizontal="true"
+        app:iss_text_align="CENTER"/>
+
+    <TextView
+        android:id="@+id/placePageDefaultModalText"
+        android:paddingTop="6dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/image_slider_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:justificationMode="inter_word"
+        android:textColor="@color/nav_bar"/>
+
+
+</RelativeLayout>

@@ -5,13 +5,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.jsalazar.costaricatravel.adapters.placeAdapter;
 import com.jsalazar.costaricatravel.constants.fragmentId;
 import com.jsalazar.costaricatravel.databinding.FragmentPlacesBinding;
 import com.jsalazar.costaricatravel.interfaces.fragmentInit;
+import com.jsalazar.costaricatravel.itemGenerator.PlaceGenerator;
+import com.jsalazar.costaricatravel.models.Place;
+
+import java.util.ArrayList;
 
 public class PlacesFragment extends Fragment {
 
@@ -35,6 +40,11 @@ public class PlacesFragment extends Fragment {
             fragmentInit mListener = (fragmentInit) this.getContext();
             mListener.setBannerAdView(binding.adView);
         }
+
+        ListView list= binding.listPlaces;
+        ArrayList<Place> places = PlaceGenerator.generate();
+        placeAdapter adapter = new placeAdapter(this.getActivity(),places);
+        list.setAdapter(adapter);
         return root;
     }
 
@@ -43,4 +53,6 @@ public class PlacesFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 }

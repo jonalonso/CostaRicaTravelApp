@@ -132,8 +132,61 @@
     <string name="holidays">Holidays</string>
     <string name="sim_value">3 Providers</string>
     <string name="holidays_value">12 Days By Year</string>
-    <string name="holidays_disclaimer">Costa Rica has 12 holidays by year. Some turistic places might increase their prices if there is a holiday coming. Keep these dates on mind while planning your trip. \\n\\n:\\nJanuary 1st\\nApril 15th\\nMarch 28th\\nMarch 29th\\nMay 1st\\nJuly 29th\\nAugust 2nd\\nAugust 15th\\nAugust 31st\\nSeptember 15th\\nDecember 1st\\nDecember 25th</string>
+    <string name="holidays_disclaimer">Costa Rica has 12 holidays by year. Some turistic places might increase their prices if there is a holiday coming. Keep these dates on mind while planning your trip:\\n\\nJanuary 1st\\nApril 15th\\nMarch 28th\\nMarch 29th\\nMay 1st\\nJuly 29th\\nAugust 2nd\\nAugust 15th\\nAugust 31st\\nSeptember 15th\\nDecember 1st\\nDecember 25th</string>
     <string name="downloadIcon">Download Park Info</string>
     <string name="locationIcon">Open park location</string>
     <string name="onlineIcon">Open Online Purchase</string>
+    <string name="place_1">National Monument Guayabo</string>
+    <string name="place_1_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/monumento_nacional_guayabo+(1).pdf</string>
+    <string name="place_1_schedule" translatable="false">8AM - 3:30PM</string>
+    <string name="place_1_price">Up to $5,65 pp.</string>
+    <string name="place_1_description">It is located on the slopes of the Turrialba Volcano, 19km northeast of the city of the same name, in the province of Cartago.\\n\\nIt is one of the most important and largest archaeological areas that has been discovered in the country. Protects archaeological structures such as roads, mounds, bridges, catchment tanks and aqueducts, among others. In addition, it protects patches of tall evergreen forests typical of the premontane rainforest.</string>
+    <string name="place_1_buy">Tickets can be purchased at the entrance with credit or debit cards only</string>
+    <string name="downloading">Downloading a file.</string>
+    <string name="downloading_good">File successfully downloaded</string>
+    <string name="downloading_error">Failed to download the file. Please check your internet connection and try again.</string>
+    <string name="place_2">Chirripo National Park</string>
+    <string name="place_2_schedule">3AM-10AM (Entry)</string>
+    <string name="place_2_price">Up to $20.34 pp.</string>
+    <string name="place_2_buy">https://serviciosenlinea.sinac.go.cr/?indice=0</string>
+    <string name="place_2_description">Welcome to the highest peak in Costa Rica. The views are spectacular, on a clear day, you can see the Pacific Ocean and the Caribbean sea simultaneously. This is probably the must challeging hike all over the country.\\n\\nThe schedule time listed before is the minimum time to entry the Park, you can even stay over night if you want.\\n\\nYou will also need to make a reservation through the online park system and an official guide</string>
+    <string name="place_2_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/chirripo_national_park+(14).pdf</string>
+    <string name="home_slider_11">Hacienda La Chimba: Coffee Hike</string>
+    <string name="place_3">Manuel Antonio National Park</string>
+    <string name="place_4">Marino Ballena National Park</string>
+    <string name="place_5">Rincon de la Vieja National Park</string>
+    <string name="place_6">Santa Rosa National Park</string>
+    <string name="place_7">Arenal Volcano National Park</string>
+    <string name="place_8">Volcano Poas National Park</string>
+    <string name="place_3_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/9_PN+Manuel+Antonio.pdf</string>
+    <string name="place_4_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/11_PN+Marino+Ballena.pdf</string>
+    <string name="place_5_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/14_PN+Rinco%CC%81n+de+la+Vieja.pdf</string>
+    <string name="place_6_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/15_PN+Santa+Rosa.pdf</string>
+    <string name="place_7_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/18_PN+Volca%CC%81n+Arenal.pdf</string>
+    <string name="place_8_download" translatable="false">https://costaricatravelapp.s3.us-east-2.amazonaws.com/20_PN+Volca%CC%81n+Poas.pdf</string>
+    <string name="place_3_price">Up to $18.08 pp.</string>
+    <string name="place_4_price">Up to $6.78 pp.</string>
+    <string name="place_5_price">Up to $16.95 pp.</string>
+    <string name="place_6_price">Up to $16.95 pp.</string>
+    <string name="place_7_price">Up to $16.95 pp.</string>
+    <string name="place_8_price">Up to $16.95 pp.</string>
+    <string name="place_3_schedule">Wed to Mon 7AM-3PM</string>
+    <string name="place_4_schedule" translatable="false">8AM-4PM</string>
+    <string name="place_5_schedule">Tue to Sun 8AM-3PM</string>
+    <string name="place_6_schedule">Wed to Mon 8AM-3:30PM</string>
+    <string name="place_7_schedule" translatable="false">8AM-4PM</string>
+    <string name="place_8_schedule">8AM-2PM (Entry)</string>
+    <string name="place_3_buy">https://serviciosenlinea.sinac.go.cr/?indice=0</string>
+    <string name="place_4_buy">Tickets can be purchased at the entrance with credit or debit cards only</string>
+    <string name="place_5_buy">https://serviciosenlinea.sinac.go.cr/?indice=0</string>
+    <string name="place_6_buy">https://reservaciones.acguanacaste.ac.cr/en/</string>
+    <string name="place_7_buy">Tickets can be purchased at the entrance with credit or debit cards only</string>
+    <string name="place_8_buy">https://serviciosenlinea.sinac.go.cr/?indice=0</string>
+    <string name="place_3_description">Walking trails surrounded by wildlife and resting on paradisiacal beaches are options that promise to captivate your senses.\\n\\nThe magic of the beach and the greenery of the forest come together in one place, and the result is a natural paradise. Not in vain the Manuel Antonio National Park is the Protected Wild Area that receives the largest number of national and international tourists.\\n\\nIn addition to beaches, the Park offers a very humid tropical forest where species of flora and fauna in danger of extinction coexist, a mangrove, marine environments, islands and a lagoon of 14 hectares.</string>
+    <string name="place_4_description">Whales and dolphins emerge from the water and offer a show that you can witness.\\n\\nInside the park you can visit the tómbolo (whale tail), go and enjoy the beaches or practice superficial and deep diving to see a huge range of marine life. You can also enjoy the calmed sea that bathes these shores or boating on nearby islands.\\n\\nThe Marino Ballena National Park has 4 official access routes for the enjoyment of visitors, all are located by South Inter-American Highway: Uvita, Colonia, Ballena and Piñuela.</string>
+    <string name="place_5_description">You will visit from a dry forest to a cloud one in the midst of a volcanic environment on a short journey.\\n\\nEmanations of boiling mud, boiling water and steam that resonate in the air. You can witness all this volcanic activity and also can visit a dry forest, one wet, one humid and one cloud in just two hours.\\n\\n\"There are unique experiences that you only can live in this park, like visiting the waterfall La Cangreja (known as the \'Blue Lagoon\' due to the characteristic water color), walks through the different environments with stunning ocean views, and the opportunity to witness \'front first row\' some of the forming agents of Costa Rican territory, \"highlighted Luis Alex Garcia, head of tourism in this National Park.</string>
+    <string name="place_6_description">Intertwined history and nature on this site, located in Guanacaste and considered as a World Heritage.\\n\\nScene of the historic Battle of March 20, 1856, the Santa Rosa National Park is the only Protected Wilderness Area that has a historical museum within its territory.\\n\\nAlso found in the park are some of the most ancient lands of Costa Rica, which emerged from the sea over 85 million years ago. \"Among the wealth of tropical dry forest, the diversity of coastal and marine habitats and some of the country\'s history, you can enjoy everything this park has to offer,\" concluded Carrillo.</string>
+    <string name="place_7_description">The grandeur of the volcano is undeniable and this is the first thing you think when visiting La Fortuna de San Carlos, where this natural wonder is located.\\n\\nJuan Diego Vargas, Park tourism operator believes that whoever visit the area should not miss to visit, in addition to the lava flows that fell in 1992, the impressive ceiba tree over 400 years old and trails along extensive and authentic rainforest, where you can appreciate the wildlife and the protected resources of this park.</string>
+    <string name="place_8_description">Being located in the province of Alajuela, it offers visitors easy access from major cities of the country.\\n\\nThis place lets you explore its attractions through a network of trails, especially in a cold climate tempered by a faint drizzle that most of the year is imposed.\\n\\nThe Volcano is active and has one of the largest craters in the world. Know this colossus without traveling long distances.\\n\\nNot only has one of the largest craters in the world, but is located in the forests of Central Mountain Range, which boasts magnificent natural landscapes</string>
+    <string name="info_modal_places">The prices listed here are the official rates for adult foreigners; children and locals gets a better fare. More information about additional national parks will be added soon. In the meantime, you can visit the official government website at www.sinac.go.cr for more details.</string>
 </resources>

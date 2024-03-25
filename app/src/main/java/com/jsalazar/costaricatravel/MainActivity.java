@@ -13,7 +13,6 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -124,11 +123,9 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
         }
         this.MainMenu.clear();
         MenuInflater inflater = getMenuInflater();
-        if (lastFragment == fragmentId.FOOD || lastFragment == fragmentId.BUS) {
+        if (lastFragment == fragmentId.FOOD || lastFragment == fragmentId.BUS || lastFragment == fragmentId.PLACES) {
             inflater.inflate(R.menu.help_option_menu, this.MainMenu);
-        }else if (lastFragment == fragmentId.PLACES) {
-            this.MainMenu = null;
-        } else if (lastFragment == fragmentId.HOME && !PREMIUM_APP) {
+        }else if (lastFragment == fragmentId.HOME && !PREMIUM_APP) {
             inflater.inflate(R.menu.premium_option_menu, this.MainMenu);
         }
 
@@ -148,10 +145,8 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
                 ViewDialog.showDialog(this,R.string.info_modal_food);
             } else if(lastFragment == fragmentId.BUS){
                 ViewDialog.showDialog(this,R.string.info_modal_bus);
-            }
-        }else if(item.getItemId() == R.id.filter_modal){
-            if(lastFragment == fragmentId.PLACES){
-                ViewDialog.showDialog(this,R.string.food_1_description);
+            } else if(lastFragment == fragmentId.PLACES){
+                ViewDialog.showDialog(this,R.string.info_modal_places);
             }
         } else if(item.getItemId() == R.id.premium_modal){
             if(lastFragment == fragmentId.HOME && !PREMIUM_APP){
@@ -160,4 +155,6 @@ public class MainActivity extends AppCompatActivity implements fragmentInit{
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

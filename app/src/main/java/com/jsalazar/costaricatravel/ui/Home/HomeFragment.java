@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment{
             mListener.onFragmentInteraction(fragmentId.HOME);
             mListener.setBannerAdView(binding.adView);
         }
-        final int MAX_SLIDER_ELEMENTS = 5;
+        final int MAX_SLIDER_ELEMENTS = 6;
         View root = binding.getRoot();
 
         ArrayList<SlideModel> tmpImgList = new ArrayList<>();
@@ -66,6 +66,7 @@ public class HomeFragment extends Fragment{
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393051/rz0rzog0zwoqs0rxbntw.jpg", getString(R.string.home_slider_8), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393288/wjvsh6t3afnbthdplaeq.jpg", getString(R.string.home_slider_9), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", getString(R.string.home_slider_10), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1710688886/zrhrifm6y5pyf0har4ve.jpg", getString(R.string.home_slider_11), ScaleTypes.FIT));
 
 
         Collections.shuffle(tmpImgList);

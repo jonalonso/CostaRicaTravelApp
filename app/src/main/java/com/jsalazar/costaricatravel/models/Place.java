@@ -1,105 +1,60 @@
 package com.jsalazar.costaricatravel.models;
 
-import com.denzcoskun.imageslider.models.SlideModel;
-
-import java.util.ArrayList;
-
 public class Place {
-    private int id;
-    private int titleId;
-    private int descriptionId;
-    private int mainPictureId;
-    private int price;
-    private int foreignPrice;
-    private ArrayList<SlideModel> pictures;
-    private String province;
-    private double latitude;
-    private double longitude;
-    private boolean isFavorite;
-    private String[] schedule = new String[7]; //sunday will be position 0
-    private String phoneNumber;
-    private String webSite;
-    private String bookingSite;
+    private final int titleId;
+    private final int descriptionId;
+    private final int downloadLinkId;
+    private final String locationURL;
+    private final int onlineBookingURL;
+    private final int priceDisclaimerId;
+    private final int scheduleDisclaimerId;
 
-    public Place(int id, int titleId, int descriptionId, int mainPictureId, int price, int foreignPrice, ArrayList<SlideModel> pictures, String province, double latitude, double longitude, boolean isFavorite, String[] schedule, String phoneNumber, String webSite, String bookingSite) {
-        this.id = id;
+    private final int[] imgs;
+
+    public Place(int titleId, int descriptionId, int downloadLinkId, String locationURL, int onlineBookingURL, int priceDisclaimerId, int scheduleDisclaimerId, int[] imgs) {
         this.titleId = titleId;
         this.descriptionId = descriptionId;
-        this.mainPictureId = mainPictureId;
-        this.price = price;
-        this.foreignPrice = foreignPrice;
-        this.pictures = pictures;
-        this.province = province;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.isFavorite = isFavorite;
-        this.schedule = schedule;
-        this.phoneNumber = phoneNumber;
-        this.webSite = webSite;
-        this.bookingSite = bookingSite;
-    }
-
-    public int getId() {
-        return id;
+        this.downloadLinkId = downloadLinkId;
+        this.locationURL = locationURL;
+        this.onlineBookingURL = onlineBookingURL;
+        this.priceDisclaimerId = priceDisclaimerId;
+        this.scheduleDisclaimerId = scheduleDisclaimerId;
+        this.imgs = imgs;
     }
 
     public int getTitleId() {
         return titleId;
     }
 
+
     public int getDescriptionId() {
         return descriptionId;
     }
 
-    public int getMainPictureId() {
-        return mainPictureId;
+    public int getDownloadLinkId() {
+        return downloadLinkId;
     }
 
-    public int getPrice() {
-        return price;
+    public String getLocationURL() {
+        return locationURL;
     }
 
-    public int getForeignPrice() {
-        return foreignPrice;
+    public int getOnlineBookingURL() {
+        return onlineBookingURL;
     }
 
-    public ArrayList<SlideModel> getPictures() {
-        return pictures;
+
+    public int getPriceDisclaimerId() {
+        return priceDisclaimerId;
     }
 
-    public String getProvince() {
-        return province;
+
+    public int getScheduleDisclaimerId() {
+        return scheduleDisclaimerId;
     }
 
-    public double getLatitude() {
-        return latitude;
-    }
 
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public boolean isFavorite() {
-        return isFavorite;
-    }
-
-    public String[] getSchedule() {
-        return schedule;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getWebSite() {
-        return webSite;
-    }
-
-    public String getBookingSite() {
-        return bookingSite;
-    }
-
-    public void setFavorite(boolean favorite) {
-        isFavorite = favorite;
+    public int[] getImgs() {
+        return imgs;
     }
 }

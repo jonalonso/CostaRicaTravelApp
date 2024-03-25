@@ -65,7 +65,7 @@ public class foodAdapter extends ArrayAdapter<FoodRow> {
     public void toogleModal(Food element){
         View view = this.context.getLayoutInflater().inflate(R.layout.fragment_food_modal,null);
         BottomSheetDialog dialog = new BottomSheetDialog(this.context);
-        TextView txt = view.findViewById(R.id.test);
+        TextView txt = view.findViewById(R.id.foodModalTitle);
         txt.setText(element.getFoodNameId());
         txt = view.findViewById(R.id.foodDescription);
         txt.setText(element.getDescriptionId());
