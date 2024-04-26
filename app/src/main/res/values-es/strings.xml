@@ -82,7 +82,6 @@
     <string name="currency_thailand">%1$.2f Bath Tailandia THB</string>
     <string name="help_menu">Ayuda</string>
     <string name="info_modal_food">Recomendamos visitar una \"Soda\" para probar comida local en Costa Rica, obtendrá los mejores precios en esos pequeños restaurantes. Los precios mostrados aquí son una estimación basada en cuanto los costarricenses que están dispuestos a pagar.</string>
-    <string name="filter_menu">Filtros</string>
     <string name="remove_ads">¡Elimina la publicidad!</string>
     <string name="remove_ads_description">Obtén la versión premium para disfrutar de una experiencia sin publicidad.</string>
     <string name="remove_ads_btn">Descargar Versión Premium</string>
@@ -159,4 +158,7 @@
     <string name="place_7_description">La imponencia del volcán Arenal es innegable y esto es en lo primero que pensamos al visitar La Fortuna de San Carlos, donde se ubica esta maravilla natural.\\n\\nQuien visite esta área protegida no debe perderse las coladas de lava que bajaron en 1992, el impresionante árbol de ceiba con más de 400 años de antigüedad y los senderos a lo largo de un extenso y auténtico bosque lluvioso, donde puede apreciar la vida silvestre y los recursos que el Parque protege.</string>
     <string name="place_8_description">Por estar situado en la provincia de Alajuela, ofrece a los visitantes buen acceso desde las principales ciudades del país.\\n\\nEste lugar le permite recorrer sus atractivos por medio de una red de senderos, en un clima frío matizado especialmente por una tenue llovizna que se impone la mayor parte del año.\\n\\nEl volcán está activo y posee uno de los cráteres más grandes del mundo. Conozca este coloso sin recorrer grandes distancias. \\n\\nNo solo tiene uno​ de los cráteres más grandes del mundo, sino que está ubicado en los bosques montañosos de la Cordillera Volcánica Central, por lo que hace gala de magníficos paisajes naturales</string>
     <string name="info_modal_places">Los precios aquí indicados son las tarifas oficiales para extranjeros adultos; los niños y los ticos(costarricenses) obtienen una mejor tarifa. Pronto se agregará más información sobre parques nacionales adicionales. Mientras tanto, puedes visitar el sitio web oficial del gobierno en www.sinac.go.cr para más detalles.</string>
+    <string name="food_19">Lengua en salsa</string>
+    <string name="food_19_description">Lengua de res cocinada a fuego lento con una variedad de sabrosas especias y hierbas.</string>
+    <string name="food_20_description">Mondongo es una sopa de domingo o para ocasiones especiales que es atrevida y hermosa. Elaborado con estomago de res y lleno de sabor, es un plato que te reta a sumergirte profundamente en la cocina local.</string>
 </resources>

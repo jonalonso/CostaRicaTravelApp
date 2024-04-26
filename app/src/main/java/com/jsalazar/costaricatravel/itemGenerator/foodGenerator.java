@@ -46,6 +46,10 @@ public class foodGenerator {
         secondElement = new Food(R.string.food_18,R.drawable.food_18_img,R.string.food_18_description,"Horchata","₡1000 ∼ ₡2000");
         response.add(new FoodRow(firstElement,secondElement));
 
+        firstElement = new Food(R.string.food_19,R.drawable.food_19_img,R.string.food_19_description,"Lengua en Salsa","₡4000 ∼ ₡5500");
+        secondElement = new Food(R.string.food_20,R.drawable.food_20_img,R.string.food_20_description,"Mondongo","₡4000 ∼ ₡5000");
+        response.add(new FoodRow(firstElement,secondElement));
+
         return response;
     }
 }

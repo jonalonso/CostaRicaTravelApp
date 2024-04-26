@@ -99,7 +99,6 @@
     <string name="help_menu">Help</string>
     <string name="ok" translatable="false">OK</string>
     <string name="info_modal_food">We highly recommend to visit a \"Soda\" (a small local restaurant) to buy some local dishes at Costa Rica, you will get the best prices on those small restaurants. Prices listed here are an estimated based on how much a costa rican is willing to pay.</string>
-    <string name="filter_menu">Filter</string>
     <string name="remove_ads">Remove Ads!</string>
     <string name="remove_ads_description">Get the premium version to enjoy an ad-free experience.</string>
     <string name="remove_ads_btn">Download Premium Version</string>
@@ -189,4 +188,8 @@
     <string name="place_7_description">The grandeur of the volcano is undeniable and this is the first thing you think when visiting La Fortuna de San Carlos, where this natural wonder is located.\\n\\nJuan Diego Vargas, Park tourism operator believes that whoever visit the area should not miss to visit, in addition to the lava flows that fell in 1992, the impressive ceiba tree over 400 years old and trails along extensive and authentic rainforest, where you can appreciate the wildlife and the protected resources of this park.</string>
     <string name="place_8_description">Being located in the province of Alajuela, it offers visitors easy access from major cities of the country.\\n\\nThis place lets you explore its attractions through a network of trails, especially in a cold climate tempered by a faint drizzle that most of the year is imposed.\\n\\nThe Volcano is active and has one of the largest craters in the world. Know this colossus without traveling long distances.\\n\\nNot only has one of the largest craters in the world, but is located in the forests of Central Mountain Range, which boasts magnificent natural landscapes</string>
     <string name="info_modal_places">The prices listed here are the official rates for adult foreigners; children and locals gets a better fare. More information about additional national parks will be added soon. In the meantime, you can visit the official government website at www.sinac.go.cr for more details.</string>
+    <string name="food_19">Beef tongue in sauce</string>
+    <string name="food_20" translatable="false">Mondongo</string>
+    <string name="food_19_description">Slow-simmered dish beef tongue cooked with a variety of savory spices and herbs.</string>
+    <string name="food_20_description">Mondongo is a Sunday or special occasion soup that’s bold and beautiful. Made with tripe and bursting with flavor, it’s a dish that dares you to dive deep into local cuisine.</string>
 </resources>
