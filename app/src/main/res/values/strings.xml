@@ -54,7 +54,7 @@
     <string name="food_15" translatable="false">Churchil</string>
     <string name="food_15_description">Churchill is a dessert made up of ice, syrup, condensed milk, powder milk, ice cream and fruits,</string>
     <string name="home_1">TimeZone</string>
-    <string name="home_1_description">UTC-6 (CST)</string>
+    <string name="home_1_description">UTC-6</string>
     <string name="home_2">Electrical Plugs</string>
     <string name="home_2_description">110V Type A &amp; B Socket</string>
     <string name="home_3">Currency</string>
@@ -187,9 +187,14 @@
     <string name="place_6_description">Intertwined history and nature on this site, located in Guanacaste and considered as a World Heritage.\\n\\nScene of the historic Battle of March 20, 1856, the Santa Rosa National Park is the only Protected Wilderness Area that has a historical museum within its territory.\\n\\nAlso found in the park are some of the most ancient lands of Costa Rica, which emerged from the sea over 85 million years ago. \"Among the wealth of tropical dry forest, the diversity of coastal and marine habitats and some of the country\'s history, you can enjoy everything this park has to offer,\" concluded Carrillo.</string>
     <string name="place_7_description">The grandeur of the volcano is undeniable and this is the first thing you think when visiting La Fortuna de San Carlos, where this natural wonder is located.\\n\\nJuan Diego Vargas, Park tourism operator believes that whoever visit the area should not miss to visit, in addition to the lava flows that fell in 1992, the impressive ceiba tree over 400 years old and trails along extensive and authentic rainforest, where you can appreciate the wildlife and the protected resources of this park.</string>
     <string name="place_8_description">Being located in the province of Alajuela, it offers visitors easy access from major cities of the country.\\n\\nThis place lets you explore its attractions through a network of trails, especially in a cold climate tempered by a faint drizzle that most of the year is imposed.\\n\\nThe Volcano is active and has one of the largest craters in the world. Know this colossus without traveling long distances.\\n\\nNot only has one of the largest craters in the world, but is located in the forests of Central Mountain Range, which boasts magnificent natural landscapes</string>
-    <string name="info_modal_places">The prices listed here are the official rates for adult foreigners; children and locals gets a better fare. More information about additional national parks will be added soon. In the meantime, you can visit the official government website at www.sinac.go.cr for more details.</string>
+    <string name="info_modal_places">The prices listed here are the official rates for adult foreigners; children and locals gets a better fare. book your tickets in advance to avoid paying more to resellers. More information about additional national parks will be added soon. In the meantime, you can visit the official government website at www.sinac.go.cr for more details.</string>
     <string name="food_19">Beef tongue in sauce</string>
     <string name="food_20" translatable="false">Mondongo</string>
     <string name="food_19_description">Slow-simmered dish beef tongue cooked with a variety of savory spices and herbs.</string>
     <string name="food_20_description">Mondongo is a Sunday or special occasion soup that’s bold and beautiful. Made with tripe and bursting with flavor, it’s a dish that dares you to dive deep into local cuisine.</string>
+    <string name="taxi" translatable="false">Taxi/Uber</string>
+    <string name="taxi_icon">Taxi or Uber in Costa Rica</string>
+    <string name="home_taxi_disclaimer">Official red cabs fare starts at 920 CRC first KM then 920 CRC per KM, this is usually the expensive way to move around the country (specially at the airport), there are 2 private transport apps available on the country, Uber and Didi. These are not legal here, but it is the most used shuttle and way more inexpensive that red cabs. You could also ask for a private shuttle but please double check with Uber to make sure you are getting a good price or you could get scammed</string>
+    <string name="download_uber"><u>Download Uber</u></string>
+    <string name="download_didi"><u>Download Didi</u></string>
 </resources>

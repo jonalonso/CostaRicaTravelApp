@@ -2,7 +2,10 @@ package com.jsalazar.costaricatravel.ui.Home;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -150,6 +153,13 @@ public class HomeFragment extends Fragment{
             }
             return true;
         });
+
+        binding.textTaxi.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleTaxiModal();
+            }
+            return true;
+        });
         return root;
     }
 
@@ -180,6 +190,9 @@ public class HomeFragment extends Fragment{
 
         BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
         TextView txt = view.findViewById(R.id.homePageDefaultModalText);
+        if(textToDisplay.contains("href")){
+            txt.setMovementMethod(LinkMovementMethod.getInstance());
+        }
         txt.setText(textToDisplay.replace("\\n", Objects.requireNonNull(System.getProperty("line.separator"))));
         dialog.setContentView(view);
         dialog.show();
@@ -215,6 +228,25 @@ public class HomeFragment extends Fragment{
 
             }
         }
+
+        dialog.setContentView(view);
+        dialog.show();
+    }
+
+    public void toogleTaxiModal(){
+        View view = getLayoutInflater().inflate(R.layout.fragment_home_taxi_modal,binding.getRoot(),false);
+        BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
+
+        TextView t2 = view.findViewById(R.id.downloadUber);
+        t2.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://referrals.uber.com/refer?id=fzcujc7fkd48"));
+            startActivity(browserIntent);
+        });
+        t2 = view.findViewById(R.id.downloadDidi);
+        t2.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.didiglobal.passenger"));
+            startActivity(browserIntent);
+        });
 
         dialog.setContentView(view);
         dialog.show();

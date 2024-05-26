@@ -352,6 +352,37 @@
                     android:id="@+id/textSim"
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_wrapBefore="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="@string/taxi_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_taxi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="@string/taxi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    android:textSize="14sp"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:id="@+id/textTaxi"
+                    app:drawableEndCompat="@drawable/ic_help" />
+            </LinearLayout>
         </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 

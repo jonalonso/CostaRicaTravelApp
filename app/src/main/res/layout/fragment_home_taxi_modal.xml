@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/modal_padding_horizontal">
+
+
+    <TextView
+        android:id="@+id/gasModalDisclaimer"
+        android:paddingTop="6dp"
+        android:paddingBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:layout_centerHorizontal="true"
+        android:justificationMode="inter_word"
+        android:text="@string/home_taxi_disclaimer"
+        android:textColor="@color/nav_bar"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gasModalDisclaimer"
+        android:paddingBottom="30dp"
+        app:alignContent="center"
+        app:justifyContent="space_around">
+
+        <TextView
+            android:id="@+id/downloadUber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:justificationMode="inter_word"
+            android:text="@string/download_uber"
+            android:textColor="@color/nav_bar"/>
+
+        <TextView
+            android:id="@+id/downloadDidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:layout_centerHorizontal="true"
+            android:justificationMode="inter_word"
+            android:text="@string/download_didi"
+            android:textColor="@color/nav_bar"/>
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>
