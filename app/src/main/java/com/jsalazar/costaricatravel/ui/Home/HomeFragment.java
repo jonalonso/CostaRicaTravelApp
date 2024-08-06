@@ -70,6 +70,8 @@ public class HomeFragment extends Fragment{
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393288/wjvsh6t3afnbthdplaeq.jpg", getString(R.string.home_slider_9), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", getString(R.string.home_slider_10), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1710688886/zrhrifm6y5pyf0har4ve.jpg", getString(R.string.home_slider_11), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1722951477/1-Punta-Uva-Puerto-Viejo-Costa-Rica.-March-2018.-A-view-of-canoes-on-the-beach-at-Punta-Uva-in-Costa-Rica_1_qnkbof.jpg", getString(R.string.home_slider_12), ScaleTypes.FIT));
+
 
 
         Collections.shuffle(tmpImgList);

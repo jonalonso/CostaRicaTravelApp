@@ -1,7 +1,9 @@
 package com.jsalazar.costaricatravel.adapters;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +42,12 @@ public class placeAdapter extends ArrayAdapter<Place> {
 
     }
 
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
+    }
+
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.places_item, null, true);
@@ -50,7 +58,7 @@ public class placeAdapter extends ArrayAdapter<Place> {
         Text.setText(element.getTitleId());
 
         ImageView img = rowView.findViewById(R.id.downloadInfo);
-        if(element.getDownloadLinkId() == 0){
+        if(element.getDownloadLinkId() == 0 || element.getTitleId()==0 || !isNetworkConnected()){
             img.setVisibility(View.GONE);
         }else{
             img.setVisibility(View.VISIBLE);
@@ -61,8 +69,12 @@ public class placeAdapter extends ArrayAdapter<Place> {
                     new BackgroundTask(context){
                         @Override
                         public void doInBackground() {
-                            String fileName = String.format("%s.pdf", context.getString(element.getTitleId()).toLowerCase().replace(" ","_"));
-                            FileDownloader.downloadFile(context,context.getString(element.getDownloadLinkId()),fileName);
+                            try {
+                                String fileName = String.format("%s.pdf", context.getString(element.getTitleId()).toLowerCase().replace(" ", "_"));
+                                FileDownloader.downloadFile(context, context.getString(element.getDownloadLinkId()), fileName);
+                            }catch (Exception ex){
+                                ex.printStackTrace();
+                            }
                         }
 
                         @Override

@@ -197,4 +197,5 @@
     <string name="home_taxi_disclaimer">Official red cabs fare starts at 920 CRC first KM then 920 CRC per KM, this is usually the expensive way to move around the country (specially at the airport), there are 2 private transport apps available on the country, Uber and Didi. These are not legal here, but it is the most used shuttle and way more inexpensive that red cabs. You could also ask for a private shuttle but please double check with Uber to make sure you are getting a good price or you could get scammed</string>
     <string name="download_uber"><u>Download Uber</u></string>
     <string name="download_didi"><u>Download Didi</u></string>
+    <string name="home_slider_12" translatable="false">Puerto Viejo</string>
 </resources>
