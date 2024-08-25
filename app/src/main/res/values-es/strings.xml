@@ -165,4 +165,5 @@
     <string name="taxi_icon">Taxi o Uber en Costa Rica</string>
     <string name="download_uber"><u>Descargar Uber</u></string>
     <string name="download_didi"><u>Descargar Didi</u></string>
+    <string name="currency_nok">%1$.2f Corona Noruega NOK</string>
 </resources>

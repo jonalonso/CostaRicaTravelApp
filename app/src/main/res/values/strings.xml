@@ -198,4 +198,5 @@
     <string name="download_uber"><u>Download Uber</u></string>
     <string name="download_didi"><u>Download Didi</u></string>
     <string name="home_slider_12" translatable="false">Puerto Viejo</string>
+    <string name="currency_nok">%1$.2f Norwegian Krone NOK</string>
 </resources>

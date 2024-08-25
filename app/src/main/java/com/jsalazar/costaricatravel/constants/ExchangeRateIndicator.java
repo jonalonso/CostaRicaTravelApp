@@ -8,6 +8,7 @@ public enum ExchangeRateIndicator {
     LibraEsterlina("330","USD",R.string.currency_pound,R.drawable.united_kingdom),
     PesoMex("332","CRC",R.string.currency_mx,R.drawable.mexican_flag),
     DolarCanadiense("328","CRC",R.string.currency_canada,R.drawable.canada_flag),
+    CoronaNoruega("343","CRC",R.string.currency_nok,R.drawable.norway_flag),
     RealBrasilero("346","CRC",R.string.currency_br,R.drawable.brazil_flag),
     PesoColombiano("345","CRC",R.string.currency_cop,R.drawable.colombia_flag),
     SolPeruano("3057","CRC",R.string.currency_pen, R.drawable.peru_flag),
