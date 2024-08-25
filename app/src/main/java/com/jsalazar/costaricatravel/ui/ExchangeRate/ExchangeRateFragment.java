@@ -166,7 +166,7 @@ public class ExchangeRateFragment extends Fragment {
                 });
             }
         }catch (Exception ex){
-            Log.d("ExchangeRate", "increaseProgress: " + ex);
+            Log.d("ExchangeRateFragment", "increaseProgress: " + ex);
         }
     }
 
