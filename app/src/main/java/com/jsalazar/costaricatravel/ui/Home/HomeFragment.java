@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment{
             mListener.onFragmentInteraction(fragmentId.HOME);
             mListener.setBannerAdView(binding.adView);
         }
-        final int MAX_SLIDER_ELEMENTS = 6;
+        final int MAX_SLIDER_ELEMENTS = 7;
         View root = binding.getRoot();
 
         ArrayList<SlideModel> tmpImgList = new ArrayList<>();
@@ -71,7 +71,8 @@ public class HomeFragment extends Fragment{
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1702393666/kgmlmwgeaac7ixchsjkr.jpg", getString(R.string.home_slider_10), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1710688886/zrhrifm6y5pyf0har4ve.jpg", getString(R.string.home_slider_11), ScaleTypes.FIT));
         tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1722951477/1-Punta-Uva-Puerto-Viejo-Costa-Rica.-March-2018.-A-view-of-canoes-on-the-beach-at-Punta-Uva-in-Costa-Rica_1_qnkbof.jpg", getString(R.string.home_slider_12), ScaleTypes.FIT));
-
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1736692170/tamarindo-sunset_j9h5af.jpg", getString(R.string.home_slider_13), ScaleTypes.FIT));
+        tmpImgList.add(new SlideModel("https://res.cloudinary.com/dsfgjdvgt/image/upload/v1736692592/Montezuma-Ylang-ylang-Costa-Rica-1_lacwsy.jpg", getString(R.string.home_slider_14), ScaleTypes.FIT));
 
 
         Collections.shuffle(tmpImgList);
@@ -162,6 +163,13 @@ public class HomeFragment extends Fragment{
             }
             return true;
         });
+
+        binding.textEmergencies.setOnTouchListener((v, event) -> {
+            if (DrawableTextViewTouched.touchedRight((TextView) v,event)) {
+                toogleEmergenciesModal();
+            }
+            return true;
+        });
         return root;
     }
 
@@ -247,6 +255,20 @@ public class HomeFragment extends Fragment{
         t2 = view.findViewById(R.id.downloadDidi);
         t2.setOnClickListener(v -> {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.didiglobal.passenger"));
+            startActivity(browserIntent);
+        });
+
+        dialog.setContentView(view);
+        dialog.show();
+    }
+
+    public void toogleEmergenciesModal(){
+        View view = getLayoutInflater().inflate(R.layout.fragment_home_emergencies_modal,binding.getRoot(),false);
+        BottomSheetDialog dialog = new BottomSheetDialog(this.requireContext());
+
+        TextView t2 = view.findViewById(R.id.embassyInfo);
+        t2.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.rree.go.cr/?sec=misiones&cat=enCR"));
             startActivity(browserIntent);
         });
 

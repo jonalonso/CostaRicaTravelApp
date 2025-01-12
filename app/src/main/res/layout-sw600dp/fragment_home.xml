@@ -358,6 +358,34 @@
                     android:id="@+id/textTaxi"
                     app:drawableEndCompat="@drawable/ic_help" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/siren"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_siren"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="@string/siren"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_bar"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:id="@+id/textEmergencies"
+                    app:drawableEndCompat="@drawable/ic_help" />
+            </LinearLayout>
         </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 

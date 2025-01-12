@@ -166,4 +166,8 @@
     <string name="download_uber"><u>Descargar Uber</u></string>
     <string name="download_didi"><u>Descargar Didi</u></string>
     <string name="currency_nok">%1$.2f Corona Noruega NOK</string>
+    <string name="home_slider_13">Playa Tamarindo</string>
+    <string name="siren">Emergencias</string>
+    <string name="emergenciesModalText">En Costa Rica el número de teléfono oficial para emergencias es el 911, si tiene alguna emergencia como perder su pasaporte puedes usar el siguiente enlace para encontrar la información de contacto de su embajada</string>
+    <string name="embassy_info"><u>Información de embajadas</u></string>
 </resources>

@@ -199,4 +199,9 @@
     <string name="download_didi"><u>Download Didi</u></string>
     <string name="home_slider_12" translatable="false">Puerto Viejo</string>
     <string name="currency_nok">%1$.2f Norwegian Krone NOK</string>
+    <string name="home_slider_13">Tamarindo Beach</string>
+    <string name="home_slider_14" translatable="false">Montezuma</string>
+    <string name="siren">Emergencies</string>
+    <string name="emergenciesModalText">In Costa Rica official phone number for emergencies is 911, if you got somehow an emergency like losing your passport use the link below to find out your embassy contact information</string>
+    <string name="embassy_info"><u>Embassy Information</u></string>
 </resources>
